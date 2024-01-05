@@ -28,8 +28,6 @@ github_username: lingchm
 theme: minima
 plugins:
   - jekyll-feed
-url: https://lingchm.github.io # the base hostname & protocol for your site
-baseurl: /kiml/  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 
 # Exclude from processing.
@@ -51,18 +49,3 @@ last_updated: true # set to true if you want to display last updated in the foot
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-
-# code highlighter theme
-highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
-highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
-
-# repo color theme
-repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
