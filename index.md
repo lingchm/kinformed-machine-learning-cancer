@@ -39,7 +39,7 @@ Below are studies from our [review paper]. This website is meant as (1) a resour
       {% endif %}
     
         {% tablerow pair in row %}
-      		{% if pair[0] == "Method" %}
+      		{% if pair[0] == "Title" %}
       			{% assign beatles = pair[1] | split: "-" %}
       		  <a href = "{{ beatles[1] }}"> {{ beatles[0] }} </a> 
       		{% else %}
