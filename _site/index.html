@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/dataTables.bootstrap5.min.css"> -->
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.1/js/dataTables.bootstrap5.min.js"></script> -->
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Knowledge-Informed Machine Learning for Cancer Applications</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Multimodal learning with graphs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Multimodal Graph Learning overview table." />
+<meta property="og:description" content="Multimodal Graph Learning overview table." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Multimodal learning with graphs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Multimodal learning with graphs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Multimodal Graph Learning overview table.","headline":"Multimodal learning with graphs","name":"Multimodal learning with graphs","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Multimodal learning with graphs" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Multimodal learning with graphs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">Multimodal learning with graphs</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="multimodal-learning-with-graphs">Multimodal learning with graphs</h1>
+
+<p><a href="https://arxiv.org/abs/2209.03299">In our perspective</a>, we observe that artificial intelligence for graphs (graph AI) has achieved remarkable success in modeling complex systems, ranging from dynamic networks in biology to interacting particle systems in physics. However, the increasingly heterogeneous graph datasets call for multimodal methods that can combine different inductive biases—the set of assumptions that algorithms use to make predictions for inputs they have not encountered during training. Learning on multimodal graph datasets presents fundamental challenges because the inductive biases can vary by data modality and graphs might not be explicitly given in the input.</p>
+
+<p>To address these challenges, multimodal graph AI methods combine different modalities while leveraging cross-modal dependencies. <a href="https://arxiv.org/abs/2209.03299">Here, we survey 145 studies</a> in graph AI and realize that diverse datasets are increasingly combined using graphs and fed into sophisticated multimodal methods, specified as image-intensive, knowledge-grounded and language-intensive models. Using this categorization, we introduce a blueprint for multimodal graph AI to study existing methods and guide the design of future methods.</p>
+
+<p><img src="/images/Figure1.jpg" alt="align=&quot;center&quot;" />
+<em>Shown on the left are the different data modalities covered in our <a href="https://arxiv.org/abs/2209.03299">multimodal graph learning perspective</a>. Shown on the right are key machine learning tasks for which multimodal graph learning (MGL) has been used successfully.</em></p>
+
+<p>Below are studies from our <a href="https://arxiv.org/abs/2209.03299">perspective</a> and the community on multimodal graph learning (MGL) and how they fall under the MGL blueprint. This website is meant as (1) a resouorce to those looking to use MGL for their application but unsure how each compoonent is realized in practice and (2) a map of MGL as an emerging field.</p>
+
+<p><strong>This table is live meaning anyone can submit a study to be considered for this table</strong> and we will update the table <strong>every week</strong>. Entries are grouped by application area.</p>
+
+<h2 id="use-this-link-to-submit-a-study-to-be-added-to-this-table">Use this <a href="https://forms.gle/ACBwCCfH6UzTeaBZ8">link</a> to submit a study to be added to this table.</h2>
+
+<p><br /></p>
+
+<table id="kiml" class="display">
+  
+      
+        <thead>
+        <tr>
+          
+            <th> Title </th>
+          
+            <th> Year </th>
+          
+            <th> Author </th>
+          
+            <th> Objective </th>
+          
+            <th> Knowledge Representation </th>
+          
+            <th> Input Data </th>
+          
+            <th> Knowledge Integration Strategy </th>
+
+            <th> Description </th>
+          
+        </tr>
+        </thead>
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/abs/2008.02457"> FuNet </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Hyperspectral pixels
+      		
+          </td><td class="col3">
+      		
+      		   Radial basis function similarity
+      		
+          </td><td class="col4">
+      		
+      		   miniGCN (GCN mini-batching)
+      		
+          </td><td class="col5">
+      		
+      		   Concatenation/sum/product
+      		
+          </td><td class="col6">
+      		
+      		   Hyperspectral image quad classification
+      		
+          </td><td class="col7">
+      		
+      		    Image
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/abs/2001.00335"> GraphFCN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Pixels
+      		
+          </td><td class="col3">
+      		
+      		   Edge weights based on gaussian kernel matrix
+      		
+          </td><td class="col4">
+      		
+      		   GCN with weighted adjacency matrix
+      		
+          </td><td class="col5">
+      		
+      		   Graph loss added with fully connected network
+      		
+          </td><td class="col6">
+      		
+      		   Image semantic segmentation
+      		
+          </td><td class="col7">
+      		
+      		    Image
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Graph_Structured_Network_for_Image"> GSMN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Images/relations/attributes
+      		
+          </td><td class="col3">
+      		
+      		   Visual graph for images combined with textual graph
+      		
+          </td><td class="col4">
+      		
+      		   Node-level and graph-level matching
+      		
+          </td><td class="col5">
+      		
+      		   Similarity function for positive and negative pairs
+      		
+          </td><td class="col6">
+      		
+      		   Image-text matching
+      		
+          </td><td class="col7">
+      		
+      		    Image
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/abs/2002.05544"> RAG GAT </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Super-pixels
+      		
+          </td><td class="col3">
+      		
+      		   Region adjacency graph
+      		
+          </td><td class="col4">
+      		
+      		   Graph attention network
+      		
+          </td><td class="col5">
+      		
+      		   Sum pooling combined with an MLP
+      		
+          </td><td class="col6">
+      		
+      		   Superpixel image classification
+      		
+          </td><td class="col7">
+      		
+      		    Image
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/pdf/1809.05679.pdf"> TextGCN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Words/documents
+      		
+          </td><td class="col3">
+      		
+      		   Occurence edges in text and corpus
+      		
+          </td><td class="col4">
+      		
+      		   GCN
+      		
+          </td><td class="col5">
+      		
+      		   No mixing/single-channel model
+      		
+          </td><td class="col6">
+      		
+      		   Text classification
+      		
+          </td><td class="col7">
+      		
+      		    Language
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://aclanthology.org/2020.acl"> CoGAN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Sentences/aspects
+      		
+          </td><td class="col3">
+      		
+      		   Sentences and aspects as nodes
+      		
+          </td><td class="col4">
+      		
+      		   Cooperative graph attention
+      		
+          </td><td class="col5">
+      		
+      		   Softmax decoding block
+      		
+          </td><td class="col6">
+      		
+      		   Aspect sentiment classification
+      		
+          </td><td class="col7">
+      		
+      		    Language
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/pdf/2103.08200.pdf"> MCN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Sentences/mentions/entities
+      		
+          </td><td class="col3">
+      		
+      		   Document-level graph
+      		
+          </td><td class="col4">
+      		
+      		   Relation-aware GCN
+      		
+          </td><td class="col5">
+      		
+      		   Sigmoid function for probability of entity pairs
+      		
+          </td><td class="col6">
+      		
+      		   Document-level relation extraction
+      		
+          </td><td class="col7">
+      		
+      		    Languauge
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://aclanthology.org/P19"> GPGNN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Word and position encodings
+      		
+          </td><td class="col3">
+      		
+      		   Generated adjacency matrix
+      		
+          </td><td class="col4">
+      		
+      		   Message passing
+      		
+          </td><td class="col5">
+      		
+      		   Pair-wise representation product
+      		
+          </td><td class="col6">
+      		
+      		   Relation extraction
+      		
+          </td><td class="col7">
+      		
+      		    Language
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://pubs.rsc.org/en/content/articlepdf/2021/sc/d0sc04823b"> QMGNN </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Atoms
+      		
+          </td><td class="col3">
+      		
+      		   Chemical bonds
+      		
+          </td><td class="col4">
+      		
+      		   Weisfeiler-Lehman Network and global attention
+      		
+          </td><td class="col5">
+      		
+      		   Concat with quantum mechanical descriptors
+      		
+          </td><td class="col6">
+      		
+      		   Regio-selectivity prediction
+      		
+          </td><td class="col7">
+      		
+      		    Natural science
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/pdf/2002.09405.pdf"> GNS </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Particles
+      		
+          </td><td class="col3">
+      		
+      		   Radial particle connectivity
+      		
+          </td><td class="col4">
+      		
+      		   General graph neural network
+      		
+          </td><td class="col5">
+      		
+      		   No mixing/single-channel model
+      		
+          </td><td class="col6">
+      		
+      		   Particle-based simulation
+      		
+          </td><td class="col7">
+      		
+      		    Natural science
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://www.nature.com/articles/s41592"> MaSIF </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Discretized protein surface mesh
+      		
+          </td><td class="col3">
+      		
+      		   Overlapping geodesic radial features
+      		
+          </td><td class="col4">
+      		
+      		   System of Gaussian kernels on a local geodesic system
+      		
+          </td><td class="col5">
+      		
+      		   No mixing/single-channel model
+      		
+          </td><td class="col6">
+      		
+      		   Ligand site prediction and classification
+      		
+          </td><td class="col7">
+      		
+      		    Natural science
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      			
+      		  <a href="https://arxiv.org/pdf/2203.05880.pdf"> MMGL </a> 
+      		
+          </td><td class="col2">
+      		
+      		   Patients
+      		
+          </td><td class="col3">
+      		
+      		   Modality aware latent graph
+      		
+          </td><td class="col4">
+      		
+      		   Adaptive graph learning based on a GCN
+      		
+          </td><td class="col5">
+      		
+      		   Sub-branch prediction neural network
+      		
+          </td><td class="col6">
+      		
+      		   Disease prediction
+      		
+          </td><td class="col7">
+      		
+      		    Natural science
+      		
+          </td></tr>
+
+      
+    
+</table>
+
+<script type="text/javascript" class="init">
+$(document).ready(function() {
+  // Create a new DataTable object
+  table = $('#kiml').DataTable();
+});
+</script>
+
+<p><br />
+<br /></p>
+
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>

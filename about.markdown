@@ -2,28 +2,19 @@
 layout: default
 title: About
 permalink: /about/
-order: 1
+order: 2
 ---
 
 # Publication
 
-[Multimodal learning with graphs](https://arxiv.org/abs/2209.03299) \
-Yasha Ektefaie<sup>\*</sup>, George Dasoulas<sup>\*</sup>, Ayush Noori, Maha Farhat, Marinka Zitnik \
+[Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/abs/2209.03299) \
+Lingchao Mao<sup>\*</sup>, Hairong Wang<sup>\*</sup>, Leland S Hu, Nhan L Tran, Peter D Canoll, Kristin R Swanson, Jing Li \
 *In Review 2022*
 
 <sup>\*</sup> Equal Contribution
 
 ```
-@article{ektefaie2022mgl,
-  doi = {10.48550/ARXIV.2209.03299},
-  url = {https://arxiv.org/abs/2209.03299},
-  author = {Ektefaie, Yasha and Dasoulas, George and Noori, Ayush and Farhat, Maha and Zitnik, Marinka},
-  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Multimodal learning with graphs},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
-}
+citation to be added 
 
 ```
 
@@ -31,13 +22,15 @@ Yasha Ektefaie<sup>\*</sup>, George Dasoulas<sup>\*</sup>, Ayush Noori, Maha Far
 
 # Authors
 
-* [Yasha Ektefaie](https://www.yashaektefaie.com)
-* [George Dasoulas](https://gdasoulas.github.io)
-* [Ayush Noori](https://www.ayushnoori.com)
-* [Maha Farhat](https://scholar.harvard.edu/mahafarhat/home)
-* [Marinka Zitnik](https://zitniklab.hms.harvard.edu)
+* [Lingchao Mao](https://lingchm.github.io/)
+* [Hairong Wang](https://www.isye.gatech.edu/users/hairong-wang)
+* [Leland S Hu](https://www.mayoclinic.org/biographies/hu-leland-s-m-d/bio-20055165)
+* [Nhan L Tran](https://www.mayo.edu/research/faculty/tran-nhan-l-ph-d/bio-20305146)
+* [Peter D Canoll](https://www.pathology.columbia.edu/profile/peter-d-canoll-md)
+* [Kristin R Swanson](https://www.mayoclinic.org/biographies/swanson-kristin-r-ph-d/bio-20164843)
+* [Jing Li](https://sites.gatech.edu/jing-li/)
 
 # Website Author
 
-This website was made by [Yasha Ektefaie](https://www.yashaektefaie.com) using [jekyll](https://jekyllrb.com)
-hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/yashaektefaie/mgl.github.io). 
+This website was made by [Lingchao Mao](https://lingchm.github.io/) using [jekyll](https://jekyllrb.com)
+hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). 

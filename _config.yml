@@ -18,17 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Multimodal learning with graphs
-email: yasha_ektefaie@g.harvard.edu
+title: Knowledge Informed Machine Learning for Cancer Applications
+email: lmao31@gatech.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Multimodal Graph Learning overview table.
-twitter_username: YEktefaie
-github_username:  yashaektefaie
+  A review of knowledge-informed machine learning papers for cancer applications
+github_username: lingchm
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+url: https://lingchm.github.io # the base hostname & protocol for your site
+baseurl: /kiml/  # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,3 +51,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+# code highlighter theme
+highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
+
+# repo color theme
+repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_trophies:
+  enabled: true
+  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
