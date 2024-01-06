@@ -65,10 +65,11 @@ import DataTable from 'datatables.net-dt';
 import 'datatables.net-responsive-dt';
 $(document).ready(function() {
   // Create a new DataTable object
-  table = $('#kiml').DataTable(
+  table = $('#kiml').DataTable({
     select: true,
     scrollY: 400,
-    scrollX: true,
+    scrollX: true
+  }
    //buttons: [
    //     'colvis',
    //     'copy',
