@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: KIML for Cancer 
+title: Overview 
 layout: default
 order: 1
 ---
@@ -29,7 +29,7 @@ Here, we focus on knowledge informed machine learning models applied in the canc
 
 Below are studies compiled from our review. This website is meant as (1) a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and (2) a snapshot of knowledge informed machine learning as an emerging field.
 
-**Use this [link](https://forms.gle/ACBwCCfH6UzTeaBZ8) to submit a study to be added to this table.** Anyone can submit a study to be considered for this table. We will update the table every month. 
+**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** Anyone can submit a study to be considered for this table. We will update the table every month. 
 
 <br />
 
