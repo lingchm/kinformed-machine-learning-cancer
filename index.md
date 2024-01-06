@@ -23,13 +23,15 @@ Here, we focus on knowledge informed machine learning models applied in the canc
 * In what form is the knowledge represented?
 * How is the knowledge integrated into the machine learning pipeline? 
 
+An overview of the surveyed papers by category is shown below:
+
 ![align="center"](images/Figure2.png)
-*Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers*
+*Figure 1. Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers*
 
 
 Below are studies compiled from our review. This website is meant as (1) a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and (2) a snapshot of knowledge informed machine learning as an emerging field.
 
-**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** Anyone can submit a study to be considered for this table. We will update the table every month. 
+**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** We will update the table every month. 
 
 <br />
 
@@ -46,7 +48,7 @@ Below are studies compiled from our review. This website is meant as (1) a resou
       {% endif %}
     
         {% tablerow pair in row %}
-      		{% if pair[0] == "Title" %}
+      		{% if pair[0] == "Paper" %}
       			{% assign beatles = pair[1] | split: "-" %}
       		  <a href = "{{ beatles[1] }}"> {{ beatles[0] }} </a> 
       		{% else %}
@@ -61,7 +63,24 @@ Below are studies compiled from our review. This website is meant as (1) a resou
 <script type="text/javascript" class="init">
 $(document).ready(function() {
   // Create a new DataTable object
-  table = $('#kiml').DataTable();
+  table = $('#kiml').DataTable(
+    select: true,
+    scrollY: 400,
+    scrollX: true,
+    columns: [
+    { "width": "25%" },
+    { "width": "25%" },
+    { "width": "10%" },
+    { "width": "20%" },
+    { "width": "20%" },
+    { "width": "50%" },
+   ],
+   buttons: [
+        'colvis',
+        'copy',
+        'csv'
+    ]
+  );
 });
 </script>
 

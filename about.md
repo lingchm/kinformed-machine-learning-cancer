@@ -22,6 +22,8 @@ citation to be added
 
 # Authors
 
+This work was led by Dr. Jing Li's lab from Georgia Tech in collaboration with researchers from Mayo Clinic and Columbia University Irving Medical Center. 
+
 * [Lingchao Mao](https://lingchm.github.io/)
 * [Hairong Wang](https://www.isye.gatech.edu/users/hairong-wang)
 * [Leland S Hu](https://www.mayoclinic.org/biographies/hu-leland-s-m-d/bio-20055165)
@@ -33,4 +35,4 @@ citation to be added
 # Website Author
 
 This website was made using [jekyll](https://jekyllrb.com)
-hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). 
+hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). Contact Lingchao Mao (lmao31@gatech.edu) if you have any suggestions or questions about this website.
