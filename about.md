@@ -9,7 +9,7 @@ order: 2
 
 [Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/abs/2209.03299) \
 Lingchao Mao<sup>\*</sup>, Hairong Wang<sup>\*</sup>, Leland S Hu, Nhan L Tran, Peter D Canoll, Kristin R Swanson, Jing Li \
-*In Review 2022*
+*In Review 2023*
 
 <sup>\*</sup> Equal Contribution
 
@@ -32,5 +32,5 @@ citation to be added
 
 # Website Author
 
-This website was made by [Lingchao Mao](https://lingchm.github.io/) using [jekyll](https://jekyllrb.com)
+This website was made using [jekyll](https://jekyllrb.com)
 hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). 

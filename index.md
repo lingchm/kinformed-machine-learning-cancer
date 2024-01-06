@@ -2,27 +2,34 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+title: KIML for Cancer 
 layout: default
 order: 1
 ---
-# Knowledge-Informed Machine Learning for Cancer Applications
 
-Cancer remains one of the most challenging diseases to treat in the medical field, with its incidence escalating alongside the increasing global life expectancy. Machine learning has enabled in-depth analysis of rich multi-omics profiles and medical imaging for cancer diagnosis and prognosis. Despite these advancements, machine learning models face challenges stemming from limited labeled sample sizes, the intricate interplay of high-dimensionality data types, the inherent heterogeneity observed among patients and within tumors, and concerns about interpretability and consistency with existing biomedical knowledge. 
+## Knowledge-Informed Machine Learning for Cancer Applications
 
-To address these challenges, a viable strategy involves the integration of biomedical knowledge into machine learning models, referred to as **knowledge-informed machine learning**. By regularizing the model’s learning process using domain knowledge (or models of that knowledge), the accuracy, robustness, and interpretability of models can be improved. Over the past decase, knowledge-informed machine learning has garnered increasing interest and demonstrated success across scientific, engineering, and health applications, particularly as a solution for settings with limited training data. In the realm of cancer biology and oncology research, there is a growing demand for the integration of mechanistic models, a form of biomedical knowledge, and machine learning.
+### Machine Learning for Cancer 
 
-This review focuses on the application of knowledge-informed machine learning in the cancer domain, where rich biomedical knowledge exists to navigate the aforementioned modeling challenges. The scope encompasses both traditional machine learning and deep learning models utilized for cancer diagnosis and prognosis, employing input data (X) such as gene expression profiles or medical images to predict clinical outcomes (y), such as cancer phenotype or patient risk score. An extensive search was conducted on PubMed in April 2023, focusing on original research articles published from 2012 onward (within the last 10 years). 
+Cancer remains one of the most challenging diseases to treat in the medical field, with its incidence escalating alongside the increasing global life expectancy. Machine learning has enabled in-depth analysis of rich multi-omics profiles and medical imaging for cancer diagnosis and prognosis. Still, cancer applications present several modeling challenges for machine learning models, including the limited labeled sample sizes, the intricate interplay of high-dimensionality data types, the heterogeneity observed among patients and within tumors, and concerns about model interpretability. 
 
-[Here, we survey 127 studies]in knowledge-informed machine learning in the cancer domain, focusing on original research articles published from 2012 onward (within the last 10 years). We provide an overview of diverse forms of knowledge representation and current strategies of knowledge integration into machine learning pipelines with concrete examples. 
+One strategy to tackle these challenges is to integrate biomedical knowledge into machine learning models, referred to as **knowledge informed machine learning (KIML)**. By regularizing the learning process using domain knowledge, the accuracy, robustness, and interpretability of models can be improved. Over the past decase, knowledge-informed machine learning has garnered increasing interest and demonstrated success across scientific, engineering, and health applications, particularly as a solution for settings with limited training data. 
+
+### A Review of KIML for Cancer 
+
+Here, we focus on knowledge informed machine learning models applied in the cancer domain, where rich biomedical knowledge exists. We reviewed 127 studies focusing on machine learning and deep learning works published within the last 10 years (from 2012 onward). All works were categorized based on three dimensions:
+
+* What type of data is used for this application?
+* In what form is the knowledge represented?
+* How is the knowledge integrated into the machine learning pipeline? 
 
 ![align="center"](images/Figure2.png)
 *Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers*
 
-Below are studies from our [review paper]. This website is meant as (1) a resource to those looking to use knowledge-informed machine learning for their application but unsure how each component is realized in practice, and (2) a map of knowledge-informed machine learning as an emerging field.
 
-**This table is live meaning anyone can submit a study to be considered for this table** and we will update the table **every week**. Entries are grouped by application area. 
+Below are studies compiled from our review. This website is meant as (1) a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and (2) a snapshot of knowledge informed machine learning as an emerging field.
 
-## Use this [link](https://forms.gle/ACBwCCfH6UzTeaBZ8) to submit a study to be added to this table.
+**Use this [link](https://forms.gle/ACBwCCfH6UzTeaBZ8) to submit a study to be added to this table.** Anyone can submit a study to be considered for this table. We will update the table every month. 
 
 <br />
 
