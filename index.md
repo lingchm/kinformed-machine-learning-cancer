@@ -66,7 +66,7 @@ Below are studies compiled from our review. This website is meant as (1) a resou
 $(document).ready(function() {
   // Create a new DataTable object
   table = $('#kiml').DataTable(
-    scrollX: true
+    //scrollX: true
     //{
     //select: true,
     //scrollY: 400,
