@@ -61,22 +61,20 @@ Below are studies compiled from our review. This website is meant as (1) a resou
 
 
 <script type="text/javascript" class="init">
-//import DataTable from 'datatables.net-dt';
-//import 'datatables.net-responsive-dt';
+import DataTable from 'datatables.net-dt';
+import 'datatables.net-buttons-dt';
+import 'datatables.net-buttons/js/buttons.colVis.mjs';
+import 'datatables.net-colreorder-dt';
+import 'datatables.net-scroller-dt';
+import 'datatables.net-select-dt';
+
 $(document).ready(function() {
   // Create a new DataTable object
   table = $('#kiml').DataTable(
-    //scrollX: true
-    //{
-    //select: true,
-    //scrollY: 400,
-    //scrollX: true
-  //}
-   //buttons: [
-   //     'colvis',
-   //     'copy',
-   //     'csv'
-   // ]
+    scrollX: true,
+    scrollY: 400,
+    select: true,
+    //buttons: ['colvis', 'copy', 'csv']
   );
 });
 </script>
