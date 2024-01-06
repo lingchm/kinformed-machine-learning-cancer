@@ -18,24 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: KIML
+title: KIML 
 email: lmao31@gatech.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A review of knowledge-informed machine learning papers for cancer applications
 github_username: lingchm
 
 # Build settings
-theme: minima
+theme: minima # minima
 plugins:
   - jekyll-feed
 last_updated: true # set to true if you want to display last updated in the footer
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: prof_pic.jpg  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 navbar_fixed: true
 footer_fixed: true
-max_width: 1200px
+max_width: 800px
+full-width: true
 
 enable_google_analytics:    false  # enables google analytics
 enable_cronitor_analytics: false  # enables cronitor RUM analytics

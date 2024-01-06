@@ -12,25 +12,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Knowledge-Informed Machine Learning for Cancer Applications</title>
+<title>Overview | KIML</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Multimodal learning with graphs" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Multimodal Graph Learning overview table." />
-<meta property="og:description" content="Multimodal Graph Learning overview table." />
+<meta property="og:title" content="Overview" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A review of knowledge-informed machine learning papers for cancer applications" />
+<meta property="og:description" content="A review of knowledge-informed machine learning papers for cancer applications" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Multimodal learning with graphs" />
+<meta property="og:site_name" content="KIML" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Multimodal learning with graphs" />
+<meta property="twitter:title" content="Overview" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Multimodal Graph Learning overview table.","headline":"Multimodal learning with graphs","name":"Multimodal learning with graphs","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A review of knowledge-informed machine learning papers for cancer applications","headline":"Overview","name":"KIML","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Multimodal learning with graphs" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="KIML" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Multimodal learning with graphs</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">KIML</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -40,49 +40,56 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">Multimodal learning with graphs</a></div>
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">Overview</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1 id="multimodal-learning-with-graphs">Multimodal learning with graphs</h1>
+        <h2 id="knowledge-informed-machine-learning-for-cancer-applications">Knowledge-Informed Machine Learning for Cancer Applications</h2>
 
-<p><a href="https://arxiv.org/abs/2209.03299">In our perspective</a>, we observe that artificial intelligence for graphs (graph AI) has achieved remarkable success in modeling complex systems, ranging from dynamic networks in biology to interacting particle systems in physics. However, the increasingly heterogeneous graph datasets call for multimodal methods that can combine different inductive biases—the set of assumptions that algorithms use to make predictions for inputs they have not encountered during training. Learning on multimodal graph datasets presents fundamental challenges because the inductive biases can vary by data modality and graphs might not be explicitly given in the input.</p>
+<h3 id="machine-learning-for-cancer">Machine Learning for Cancer</h3>
 
-<p>To address these challenges, multimodal graph AI methods combine different modalities while leveraging cross-modal dependencies. <a href="https://arxiv.org/abs/2209.03299">Here, we survey 145 studies</a> in graph AI and realize that diverse datasets are increasingly combined using graphs and fed into sophisticated multimodal methods, specified as image-intensive, knowledge-grounded and language-intensive models. Using this categorization, we introduce a blueprint for multimodal graph AI to study existing methods and guide the design of future methods.</p>
+<p>Cancer remains one of the most challenging diseases to treat in the medical field, with its incidence escalating alongside the increasing global life expectancy. Machine learning has enabled in-depth analysis of rich multi-omics profiles and medical imaging for cancer diagnosis and prognosis. Still, cancer applications present several modeling challenges for machine learning models, including the limited labeled sample sizes, the intricate interplay of high-dimensionality data types, the heterogeneity observed among patients and within tumors, and concerns about model interpretability.</p>
 
-<p><img src="/images/Figure1.jpg" alt="align=&quot;center&quot;" />
-<em>Shown on the left are the different data modalities covered in our <a href="https://arxiv.org/abs/2209.03299">multimodal graph learning perspective</a>. Shown on the right are key machine learning tasks for which multimodal graph learning (MGL) has been used successfully.</em></p>
+<p>One strategy to tackle these challenges is to integrate biomedical knowledge into machine learning models, referred to as <strong>knowledge informed machine learning (KIML)</strong>. By regularizing the learning process using domain knowledge, the accuracy, robustness, and interpretability of models can be improved. Over the past decase, knowledge-informed machine learning has garnered increasing interest and demonstrated success across scientific, engineering, and health applications, particularly as a solution for settings with limited training data.</p>
 
-<p>Below are studies from our <a href="https://arxiv.org/abs/2209.03299">perspective</a> and the community on multimodal graph learning (MGL) and how they fall under the MGL blueprint. This website is meant as (1) a resouorce to those looking to use MGL for their application but unsure how each compoonent is realized in practice and (2) a map of MGL as an emerging field.</p>
+<h3 id="a-review-of-kiml-for-cancer">A Review of KIML for Cancer</h3>
 
-<p><strong>This table is live meaning anyone can submit a study to be considered for this table</strong> and we will update the table <strong>every week</strong>. Entries are grouped by application area.</p>
+<p>Here, we focus on knowledge informed machine learning models applied in the cancer domain, where rich biomedical knowledge exists. We reviewed 127 related papers since 2012, including both machine learning and deep learning studies.</p>
 
-<h2 id="use-this-link-to-submit-a-study-to-be-added-to-this-table">Use this <a href="https://forms.gle/ACBwCCfH6UzTeaBZ8">link</a> to submit a study to be added to this table.</h2>
+<p>All papers were categorized based on three dimensions:</p>
+
+<ul>
+  <li><em>What type of data is used for this application?</em></li>
+  <li><em>In what form is the knowledge represented?</em></li>
+  <li><em>How is the knowledge integrated into the machine learning pipeline?</em></li>
+</ul>
+
+<p>An overview of the surveyed papers by category is shown below:</p>
+
+<p><img src="images/Figure2.png" alt="figure2" width="1000" class="center" margin="auto" />
+<em>Figure 1. Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers</em></p>
+
+<h3 id="live-summary-table">Live Summary Table</h3>
+
+<p>Below are studies compiled from our review. This website is meant as (1) a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and (2) a snapshot of knowledge informed machine learning as an emerging field.</p>
+
+<p><strong>Use this <a href="https://forms.gle/5kpcCzYFpy5vYhGp8">link</a> to submit a paper to be added to this table.</strong> We will update the table every month.</p>
 
 <p><br /></p>
-
 <table id="kiml" class="display">
   
       
         <thead>
         <tr>
           
-            <th> Title </th>
+            <th>﻿Paper</th>
           
-            <th> Year </th>
+            <th>Medical Objective</th>
           
-            <th> Author </th>
+            <th>Categorization</th>
           
-            <th> Objective </th>
-          
-            <th> Knowledge Representation </th>
-          
-            <th> Input Data </th>
-          
-            <th> Knowledge Integration Strategy </th>
-
-            <th> Description </th>
+            <th>Description</th>
           
         </tr>
         </thead>
@@ -91,32 +98,23 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/abs/2008.02457"> FuNet </a> 
+      		   2023 - Zhang - Accurate TCR-pMHC interaction prediction using a BERT-based transfer learning method
       		
           </td><td class="col2">
       		
-      		   Hyperspectral pixels
+      		   Prediction of TCR-pMHC binding for development of cancer immunotherapy
       		
           </td><td class="col3">
       		
-      		   Radial basis function similarity
+      		   Data: Clinical 
+
+Representation: Auxiliary Datasets - public
+
+Integration: Transfer learning
       		
           </td><td class="col4">
       		
-      		   miniGCN (GCN mini-batching)
-      		
-          </td><td class="col5">
-      		
-      		   Concatenation/sum/product
-      		
-          </td><td class="col6">
-      		
-      		   Hyperspectral image quad classification
-      		
-          </td><td class="col7">
-      		
-      		    Image
+      		   The authors proposes a TCR-BERT embedding model, a pre-trained architecture based on BERT. Training was done on over 113,000,000 CDR3beta sequeances from TCRdb database, coverting over 29 diseases and 10 tissues. The model was trained using masked language modeling tasks. The authors also propose a pMHC-BERT embedding model that share similar architecture as the TCR embedding model. Finally, the TABR-BERT model is trained to predct TCR-pMHC interaction. This approach mitigates the challenge of limited training data in TCR-pMHC binding prediction models. 
       		
           </td></tr>
 
@@ -127,32 +125,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/abs/2001.00335"> GraphFCN </a> 
+      		   2023 - Wysocki - Transformers and the Representation of Biomedical Background Knowledge
       		
           </td><td class="col2">
       		
-      		   Pixels
+      		   Natural Language Inference in the context of a cancer precision medicine inference task to support Clinical s in the evaluation of the Clinical  significance of findings compared to existing evidence 
       		
           </td><td class="col3">
       		
-      		   Edge weights based on gaussian kernel matrix
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
       		
           </td><td class="col4">
       		
-      		   GCN with weighted adjacency matrix
-      		
-          </td><td class="col5">
-      		
-      		   Graph loss added with fully connected network
-      		
-          </td><td class="col6">
-      		
-      		   Image semantic segmentation
-      		
-          </td><td class="col7">
-      		
-      		    Image
+      		   This paper compared two transfromers specialized for the biomedical domain (BioBERT and BioMegatron), both pre-trained on large biomedical text corpora (PubMed). The comparison evaluates their ability to capture entities, complex relationships, biomeidcal facts, etc.
       		
           </td></tr>
 
@@ -163,32 +150,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Graph_Structured_Network_for_Image"> GSMN </a> 
+      		   2023 - Weiskittel - Network Biology-Inspired Machine Learning Features Predict Cancer Gene Targets and Reveal Target Coordinating Mechanisms
       		
           </td><td class="col2">
       		
-      		   Images/relations/attributes
+      		   Predict  dependency of genes to cancer lineage
       		
           </td><td class="col3">
       		
-      		   Visual graph for images combined with textual graph
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
       		
           </td><td class="col4">
       		
-      		   Node-level and graph-level matching
-      		
-          </td><td class="col5">
-      		
-      		   Similarity function for positive and negative pairs
-      		
-          </td><td class="col6">
-      		
-      		   Image-text matching
-      		
-          </td><td class="col7">
-      		
-      		    Image
+      		   For each cancer type, the ARACNE algorithm was used to create regulatory networks for each cancer lineage in DepMap using Cancer Cell Line Encyclopedia RNAseq data. For each gene in each lineage-specific regulatory network, the following were extracted: (i) network features, (ii) number of cancer halllmark neighbors, (iii), sum of weights, and (iv) length of path to cancer-associated genes from the Cancer Gene Census.
       		
           </td></tr>
 
@@ -199,32 +175,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/abs/2002.05544"> RAG GAT </a> 
+      		   2023 - Wang - Quantifying intra-tumoral genetic heterogeneity of glioblastoma toward precision medicine using MRI and a data-inclusive machine learning algorithm
       		
           </td><td class="col2">
       		
-      		   Super-pixels
+      		   Predict the regional genetic alteration of three GBM driver genes (EGFR, PDGFRA and PTEN)
       		
           </td><td class="col3">
       		
-      		   Region adjacency graph
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
       		
           </td><td class="col4">
       		
-      		   Graph attention network
-      		
-          </td><td class="col5">
-      		
-      		   Sum pooling combined with an MLP
-      		
-          </td><td class="col6">
-      		
-      		   Superpixel image classification
-      		
-          </td><td class="col7">
-      		
-      		    Image
+      		   A novel Weakly Supervised Ordinal Support Vector Machine (WSO-SVM) was proposed to integrate unlabeled samples with imprecise/interval labels. The ordinal relationships between labels was considered in the formulation of WSO-SVM.
       		
           </td></tr>
 
@@ -235,32 +200,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/pdf/1809.05679.pdf"> TextGCN </a> 
+      		   2023 - Wang -  A Novel Hybrid Ordinal Learning Model with Health Care Application
       		
           </td><td class="col2">
       		
-      		   Words/documents
+      		   Predict the regional genetic alteration of three GBM driver genes (EGFR, PDGFRA and PTEN)
       		
           </td><td class="col3">
       		
-      		   Occurence edges in text and corpus
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
       		
           </td><td class="col4">
       		
-      		   GCN
-      		
-          </td><td class="col5">
-      		
-      		   No mixing/single-channel model
-      		
-          </td><td class="col6">
-      		
-      		   Text classification
-      		
-          </td><td class="col7">
-      		
-      		    Language
+      		   A Hybrid Ordinal Learner (HOL) was proposed to integrate samples with both precise and interval labels to train a robust Ordinal Learner (OL) model. The domain knowledge about imprecise labels of unlabeled samples, and ordinal relationships between labels is considered in the model. The model can be formulated as an optimization problem with ordinal constrains. A novel conversion method was developed that converts the HOL formulation into an equivalent formulation of learning a set of binary classifiers with coupled parameters. 
       		
           </td></tr>
 
@@ -271,32 +225,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://aclanthology.org/2020.acl"> CoGAN </a> 
+      		   2023 - Shoemaker - Bayesian feature selection for radiomics using reliability metrics
       		
           </td><td class="col2">
       		
-      		   Sentences/aspects
+      		   Selection of radiomic features
       		
           </td><td class="col3">
       		
-      		   Sentences and aspects as nodes
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature selection
       		
           </td><td class="col4">
       		
-      		   Cooperative graph attention
-      		
-          </td><td class="col5">
-      		
-      		   Softmax decoding block
-      		
-          </td><td class="col6">
-      		
-      		   Aspect sentiment classification
-      		
-          </td><td class="col7">
-      		
-      		    Language
+      		   The authors assign a prior distribution over gene coefficients, which allows more flexibilty. The inclusion of each feature is represented via a latent indicator. Prior knowledge about genes that are important or pairs of genes that are related can be used to specify this latent indicator.
       		
           </td></tr>
 
@@ -307,32 +250,22 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/pdf/2103.08200.pdf"> MCN </a> 
+      		   2023 - Savchenko - Mathematical modeling of BCG-based bladder cancer treatment using socio-demographics
       		
           </td><td class="col2">
       		
-      		   Sentences/mentions/entities
+      		   Predict tumor cell growth with  personalized BCG models for improved treatment of breast cancer
       		
           </td><td class="col3">
       		
-      		   Document-level graph
+      		   Data: Clinical 
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
       		
           </td><td class="col4">
       		
-      		   Relation-aware GCN
-      		
-          </td><td class="col5">
-      		
-      		   Sigmoid function for probability of entity pairs
-      		
-          </td><td class="col6">
-      		
-      		   Document-level relation extraction
-      		
-          </td><td class="col7">
-      		
-      		    Languauge
+      		   This study aims to improve the Bacillus Calmette-Gérin (BCG)-based treatment protocols by changing the “one-size-fits-all” approach with a more personalized one. This was done by integration of a machine learning component which is used to assess and adjust the model’s parameters over individuals and over time. Specifically, in the BCG model, the scalar parameters were replaced with functions that depend on time and the socio-demographics of the patient, and a term associated with the presence of immune cells based on the level of the patient’s activeness was added to the immune cell populations. The authors carefully designed a parameter fitting procedure to estimate the personalized model parameters overcoming the limited labeled samples
+(and explained right after):
       		
           </td></tr>
 
@@ -343,32 +276,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://aclanthology.org/P19"> GPGNN </a> 
+      		   2023 - Peng - Boundary delineation in transrectal ultrasound images for region of interest of prostate
       		
           </td><td class="col2">
       		
-      		   Word and position encodings
+      		   Segment prostate from transrectal ultrasound (TRUS) images for brachytherapy for prostate cancer
       		
           </td><td class="col3">
       		
-      		   Generated adjacency matrix
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Hyperparameter setting
       		
           </td><td class="col4">
       		
-      		   Message passing
-      		
-          </td><td class="col5">
-      		
-      		   Pair-wise representation product
-      		
-          </td><td class="col6">
-      		
-      		   Relation extraction
-      		
-          </td><td class="col7">
-      		
-      		    Language
+      		   Among the four common imaging modalities used for prostate diagnosis, TRUS has a higher dependence on prior information regarding shape features for prostate segmentation. This study proposes a semi-automatic contour detection that adopts radiologist-defined data seed points as a prior. The seed points are important because the segmentation algorithm (principal curve-based method) assumes that seed point is perfect without any abnormal points.
       		
           </td></tr>
 
@@ -379,32 +301,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://pubs.rsc.org/en/content/articlepdf/2021/sc/d0sc04823b"> QMGNN </a> 
+      		   2023 - Meaney - Deep learning characterization of brain tumours with diffusion weighted imaging
       		
           </td><td class="col2">
       		
-      		   Atoms
+      		   Predict tumor progression curve and estaimte patient-specific tumor parameters of the PI model for patients with blioblastoma multiforme (GBM) for personalzed treatment
       		
           </td><td class="col3">
       		
-      		   Chemical bonds
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Physics-informed Neural Networks
       		
           </td><td class="col4">
       		
-      		   Weisfeiler-Lehman Network and global attention
-      		
-          </td><td class="col5">
-      		
-      		   Concat with quantum mechanical descriptors
-      		
-          </td><td class="col6">
-      		
-      		   Regio-selectivity prediction
-      		
-          </td><td class="col7">
-      		
-      		    Natural science
+      		   The PI model need two parameters to run. However, accurately estimating these two parameters is quite challenging. Existing appraoch use sumary measurements taken from imaging with several mathematical assumptions, which ignores granular measurements. The authors propose a deep learnning model to provide patient-specific estimates of the PI model parameters and simultaneously give a full forecast of the intermediate GBM progression curve. First, a cellularity map is obtained from the image using rules derived from known mapping between ADC nad tumor cellularity and the tissue class. Then, cellularity map is used as inputs of the deep learning model. PI parameters are incorporated into the customized loss, which is designed following concepts of PINN. 
       		
           </td></tr>
 
@@ -415,32 +326,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/pdf/2002.09405.pdf"> GNS </a> 
+      		   2023 - Mao - Weakly Supervised Transfer Learning with Application in Precision Medicine
       		
           </td><td class="col2">
       		
-      		   Particles
+      		   Predict Tumor Cell Density for patients with GBM 
       		
           </td><td class="col3">
       		
-      		   Radial particle connectivity
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
       		
           </td><td class="col4">
       		
-      		   General graph neural network
-      		
-          </td><td class="col5">
-      		
-      		   No mixing/single-channel model
-      		
-          </td><td class="col6">
-      		
-      		   Particle-based simulation
-      		
-          </td><td class="col7">
-      		
-      		    Natural science
+      		   To build personalized models despite limited labeled samples are avaiable for each patient, this paper employed two strategies: (i) transfer learning from other patients with the same disease, and (ii) weakly supervised learning using weak labels derived from radiologist's expertise. Specifically, the enhancing ROI and non-enhancing ROI annotations were used to extract pairs of unlabeled samples that are expected to have ordering relationship in their labels. An additional term is added to the loss function to penalize the wrongly ordered weakly labeled pairs.
       		
           </td></tr>
 
@@ -451,32 +351,21 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://www.nature.com/articles/s41592"> MaSIF </a> 
+      		   2023 - Imperio - Pathologist Validation of a Machine Learning–Derived Feature for Colon Cancer Risk Stratification
       		
           </td><td class="col2">
       		
-      		   Discretized protein surface mesh
+      		   evaluate whether pathologist scoring of a histopathologic feature previously identified by machine learning is associated with survival among patients with colon cancer.
       		
           </td><td class="col3">
       		
-      		   Overlapping geodesic radial features
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
       		
           </td><td class="col4">
       		
-      		   System of Gaussian kernels on a local geodesic system
-      		
-          </td><td class="col5">
-      		
-      		   No mixing/single-channel model
-      		
-          </td><td class="col6">
-      		
-      		   Ligand site prediction and classification
-      		
-          </td><td class="col7">
-      		
-      		    Natural science
+      		   Tumor adipose feautre (TAF) was previously identified via a prognostic deep learning model developed with an independent colorectal cancer cohort. In study had 2 pathologists conduct semiquantitative scoring for TAF on colon cancer cases to verify the prognostic value of TAF for overall survival.
       		
           </td></tr>
 
@@ -487,32 +376,3148 @@
         <tr class="row1">
 <td class="col1">
       		
-      			
-      		  <a href="https://arxiv.org/pdf/2203.05880.pdf"> MMGL </a> 
+      		   2023 - Cho - Interpretable Meta-learning of Multi-omics Data for Survival Analysis and Pathway Enrichmen
       		
           </td><td class="col2">
       		
-      		   Patients
+      		   Survival analysis/prediction for patients with cancer
       		
           </td><td class="col3">
       		
-      		   Modality aware latent graph
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Multitask learning
       		
           </td><td class="col4">
       		
-      		   Adaptive graph learning based on a GCN
+      		   Proposed a meta-learning approach that uses various combinations of integrated omics datasets to train a prediction model of cancer survival. Results showed that this meta-learning design allowed finding robust functional and semantic relationships among genes.
       		
-          </td><td class="col5">
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
       		
-      		   Sub-branch prediction neural network
+      		   2023 - Bogatu - Meta-analysis informed machine learning- Supporting cytokine storm detection during CAR-T cell Therapy
       		
-          </td><td class="col6">
+          </td><td class="col2">
       		
-      		   Disease prediction
+      		   Predict future occurrence of Cytokine Release Syndrome, a common adverse effects of chimeric antigen receptor therapies in cancer treatment
       		
-          </td><td class="col7">
+          </td><td class="col3">
       		
-      		    Natural science
+      		   Data: Clinical 
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   The challenge to tackle is the limited sample size. The authors defined a knowledge base (KB) of statistical biomedical facts extracted from domain literature, which they call a metareview-informed diagnosis process. The KB was used to augment samples of biomarker concentration measurements through quantifying the degree of similarity between the given measurement value and the statistical values reported in each study in the domain literature
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Xie - SRG-Vote- Predicting Mirna-Gene Relationships via Embedding and LSTM Ensemble
+      		
+          </td><td class="col2">
+      		
+      		   Predict potetial miRNA-gene interactions from large public datasets which might contribute to future diagnosis, prevention, and cancer therapy
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Graph models
+      		
+          </td><td class="col4">
+      		
+      		   The authors propose a voting system composing of three types of embeddings: (i) sequential embedding of miRNA and gene sequence via doc2vec, (ii) geometrical embedding  of miRNA and gene via role2vec, and (iii) a graph convolutional networks embedding from miRNA-miRNA and gene-gene networks. Pairs of miRNA-gene were fed into LSTM and B-LSTM models to predict their relationships.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Wang - Biologically-informed deep neural networks provide quantitative assessment of intratumoral heterogeneity in post-treatment glioblastoma
+      		
+          </td><td class="col2">
+      		
+      		   Prediction of three gene modules: recurrent tumor tissue, treatment-induced changes, and normal brain tissue
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   Proposed a two-stage model pipeline, including BioNet_Neu and BioNet_ProInf, to accommodate the hierarchical relationship of three gene modules relevant to GBM prognosis. Predictions are first generated for the gene module that has more supervision from biological knowledge. The outputs of this step then provided additional information for the interplay of the other two gene modules. The BioNet_ProInf is a multitask, semi-supervised learning model with a customknowledge attention loss.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Wang - A Novel Deep Learning Method to Predict Lung Cancer Long-Term Survival With Biological Knowledge Incorporated Gene Expression Images
+      		
+          </td><td class="col2">
+      		
+      		   Predict long-term survival for patients with lung cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   To overcome high-dimensionality, converted gene data into images incorporating pathway knowledge. Specifically, the knowledge provides hierarchical data where genes and proteins are root and gene expression are leaves. Used the hierarchical index sorting by mean across all samples to put gene expressions into a square matrix. Then, trained a CNN using four inputs: two gene expression images and two sets of Clinical  data. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Shen - Identify Representative  Samples by Conditional Random Field of Cancer Histology Images 
+      		
+          </td><td class="col2">
+      		
+      		   1. Identify representative tissues within whole-slide images. 2. Classification of cancer prototype for colorectal cancer tissues. 3. Active learning -find representative patches to label to reduce annotation costs.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Recorded the spatial coordinates of each patch on the image grid. Then, used conditional random field (CRF) to model the probability of classes based on the classification output and spatial coordinates. The CRF model measures the spatial correlations to derive costs of different offsets and dynamically learns offsets that lead to locations of most representative patches. CNN was used as a feature extractor. The model can be used as feature extractor for any state-of-the-art classifiers. The model can also be used for active learning to reduce annotation costs. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Perez Raya - Thermal Modeling  of Patient-Specific Breast Cancer with Physics-Based Artificial Intelligence
+      		
+          </td><td class="col2">
+      		
+      		   Learn parameters of a physics model (model the breast surface temperature from thermal properties of the tumor in order to detect tumor location) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Physics-informed Neural Networks
+      		
+          </td><td class="col4">
+      		
+      		   Used physics-informed neural network to learn the parameters of a bioheat equation. Physics-informed neural network uses physical constraints, boundary conditions, and a PDE equations to define the loss function. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Peng - H-ProSeg- Hybrid ultrasound prostate segmentation based on explainability-guided mathematical model
+      		
+          </td><td class="col2">
+      		
+      		   Segment prostate from transrectal ultrasound (TRUS) images for brachytherapy for prostate cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Hyperparameter setting
+      		
+          </td><td class="col4">
+      		
+      		   This study proposes a semi-automatic contour detection that adopts radiologist-defined data seed points as a prior. The model has three sub-networks. The first sub-network uses an improved principal curve-based methods to obtain seed points and their projection index. The second sub-network uses a differential eovlution-based neural network. The third sub-network uses the neurla network to explain the smooth mathematical description of the prostte contour.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Ma - DualGCN- a dual graph convolutional network model to predict cancer drug response
+      		
+          </td><td class="col2">
+      		
+      		   Predict anti-cancer drug response (sensitive vs resistant). 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Used chemical structure of drugs to represent each drug as a graph, where nodes are atoms and edges are connection between atoms.  Used PPI network to represent each cancer sample as a graph, where nodes are proteins (genes) and edges are interaction between proteins. The two graphs as separately fed into GCN and their embeddings are concatenated and fed into MLP to predict drug response. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Liu - Multimodal Brain Tumor Segmentation Using Contrastive Learning Based Feature Comparison with Monomodal Normal Brain Images
+      		
+          </td><td class="col2">
+      		
+      		   Segment brain tumor from MRI.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   This paper used the MRI from healthy controls to help segment tumor for tumor brains. One challenge is that normal brain images are often monomodal and tumor brain images are multimodal. To tackle this, the authors used a "normal appearance network" to obtain a reconstructed "normal brain" image for the tumor brains that is comparable to the healthy controls. In detail, they trained IntroVAE using T1 image of healthy controls to obtain a lower dimensional representation of normal brain appearance, then projected the tumor brain image to this representation and obtain a reconstruction of "normal brain appearance". Then, in the segmentation network, they i) used a simple Siamese network to align the feature maps of the normal and tumor images in the normal regions, and ii) compared the feature maps of the normal and tumor images to identify low feature consistency regions as tumor regions. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Liu - MetBERT- a generalizable and pre-trained deep learning model for the prediction of metastatic cancer from Clinical  notes
+      		
+          </td><td class="col2">
+      		
+      		   Predict cancer metastasis (all types of cancer)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Used four language models pre-trained on Clinical  and scientic data (BioBERT, BlueBERT, Clinical BERT, PubmedBERT) and fine-tuned them using in-domain data (EHR Clinical  notes). 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Li - Coupling Deep Deformable Registration with Contextual Refinement for Semi-Supervised Medical Image Segmentation
+      		
+          </td><td class="col2">
+      		
+      		   Segmentation of anatomical structures from medical images (not targeted for tumor but can be applied to tumor and is related to cancer diagnosis)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Probabilistic Relationships
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   First, the authors applied an image registration model (deep diffeomorphic registration model) that allows regions predefined on templates to be overlaid on the image and produces a segmentation map of anatomical structures. Then, this segmentation map is refined by warping with the probabilistic atlas map and taking the nearest interpolation. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Lee - A Novel Knowledge Keeper Network for 7T-Free but 7T-Guided Brain Tissue Segmentation
+      		
+          </td><td class="col2">
+      		
+      		   Segment brain tissue from MRI (not explicitly for cancer but related)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   It is known that 7T images provide better insights for diagnosis. However, 7T MRI are not always available. This paper aims to build 7T-free but 7T-guided brain tiissue segmentation model. They used paired 3T-7T images to train a module that extracts 7T-like representations from 3T images using knowledge distillation and a discriminator. At inference time, the network is able to use only 3T images to do segmentation with 7T-image guided information.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Huang - MTL-ABS3Net- Atlas-Based Semi-Supervised Organ Segmentation Network With Multi-Task Learning for Medical Images 
+      		
+          </td><td class="col2">
+      		
+      		   Segmentation of organs from medical images (not targeted for tumor but can be applied to tumor.)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Probabilistic Relationships
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   First, trained a segmentation network using labeled images. Applied the trained network on unlabeled data and computed a confidence map by comparing the segmentation results with the probability atlas. The high confidence pixels were selected and set as ground truth to compute loss for unlabeled samples.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2022 - Bhattacharya - Integrating zonal priors and pathomic MRI biomarkers for improved aggressive prostate cancer detection on MRI
+      		
+          </td><td class="col2">
+      		
+      		   Pixel-level classification/diagnosis of prostate cancer (normal, indolent, aggressive classes) from MRI
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Probabilistic Relationships
+Integration: Hyperparameter setting
+      		
+          </td><td class="col4">
+      		
+      		   Zonal priors contain Clinical  domain knowledge that aggressive cancer is more likely to occur in some zones. The zonal priors were formulated as mean probabilities of each class, conditional probabilities of each class given the zone and conditional probabilities of each zone given the class. The authors proposed two ways to integrate the zonal prior probabililites. One way is to to use it as a prior in the bayes decision model. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Zhou - Multi-task learning for segmentation and classification of tumors in 3D automated breast ultrasound images
+      		
+          </td><td class="col2">
+      		
+      		   Classify and segment tumor in 3D automated breast ultrasoudn images for breast disease diagnosis and surgical planning
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Multitask learning
+      		
+          </td><td class="col4">
+      		
+      		   Since the benigh and malignant tumors usually have different shape characteristics, the authors assume that the segmentation and the classification task can help each other. They designed a multi-task model that simultaneously does segmentation and classification. Additionally, since ABUS volumes have severe noise and tumors in ABUS have ambiguous boundaries, they proposed a iterative feature-refining strategy during training to refine the feature maps using probability maps obtained from previous iterations.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Zhou - 3D multi-view tumor detection in automated whole breast ultrasound using deep convolutional neural network☆
+      		
+          </td><td class="col2">
+      		
+      		   Detect tumor from 3D images for patients with breast cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Hyperparameter setting
+      		
+          </td><td class="col4">
+      		
+      		   (1) Defined the anchor size/aspect ratios for each of the three views based on the expected tumor size from each view. For example, tumors have closer to square shape in saggital view and elongated rectangular shape in axial and coronal views. (2) Also, tumors can be as small as occupying 2% of the full image which makes them hard to detect. So redesigned the VGG feature extraction network to better detect small tumors: i) added deconvolution layers to enlarge the last feature map, ii) concatenated feature maps that represented local and global textures.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Zhao - DeepOmix- A scalable and interpretable multi-omics deep learning framework and application in cancer survival analysis
+      		
+          </td><td class="col2">
+      		
+      		   Prognosis of lower grade glioma using multi-omics data
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   This work proposes DeepOmix, a deep learning model for cancer survivla analysis using multi-omics datasets. This network can incorporate prior biological knowledge of gene functional module networks as the function module layer (the second layer). The number of nodes and edges between the first and second layer are defined based on knowledge from tissue networks, gene co-expression networks, or prior biological signaling pathways.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Zhang - Predicting Anticancer Drug Response With Deep Learning Constrained by Signaling Pathways
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug response for multiple cancer cell lines.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   This work proposes consDeepSignaling, a deep learning model for drug response prediction. To reduce number of features and make the model more interpretable, 46 signaling pathways (from KEGG) and 929 genes were used to build the deep learning model. The layers corresponded to input layer, gene layer, pathway layer, and other hidden layers. Layer's connection also followed known biological knowledge.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Zangooei - Multiscale computational modeling of cancer growth using features derived from microCT images
+      		
+          </td><td class="col2">
+      		
+      		   Predict tumor and microvascular network growth patterns for breat cancer.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   To simulate complicated spatiotemporal and multiscale biological behavior of cancer growth, this paper used three multiscale image-based PDE models of tumor growth. The simulation performed at microscope, mesoscopic, and macroscopic scale. The model environment was formulated on a regular grid of lattice sites called tumor microenvironments. Knowledge was used to setup this environment with regulatory substances, diffusible factors, cancer cells, and pathways. A deep reinforcement learning framework was setup, with discrete policies that are functional map states. At microscope scale, an agent that seek to have a desired phenotype at each simulation time step. At mesoscopi sale, cells and vessels are represented as agents with their own phenotype. A neural netowrk predicts tumor cell growth.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Weiss - PILOT: Physics-Informed Learned Optimized Trajectories for Accelerated MRI
+      		
+          </td><td class="col2">
+      		
+      		   Find optimized trajectories for accelerated MRI
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - other
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   This work aims to find optimized trajectories for accelerated MRI. Prior knowledge about the peak-current and the maximum slew-rate produced by the gradient coils were translated into geometric constraints in the optimization problem to ensure physically viable solutions.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Wang - Knowledge-Infused Global-Local Data Fusion for Spatial Predictive Modeling in Precision Medicine
+      		
+          </td><td class="col2">
+      		
+      		   Predict brain tumor cell density (TCD) by a Gaussian Process based model.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Proliferation-invasion (PI) model is used to predict TCD. The difference between the predicted TCD from the proposed model and that from PI is constrained to be smaller than slack variables. (Soft constraints) 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Sanyal - Weakly supervised temporal model for prediction of breast cancer distant recurrence
+      		
+          </td><td class="col2">
+      		
+      		   Predict cancer recurrence for patients with breast cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - private
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   (Same model as Barnejee 2019). This work used a large set of Clinical  notes to generate weak labels for training data, and trained a NLP model using the small, expert-labeled data and large, weakly labeled data. Used medical dictionary to clean the text data (combine related terms together, reduce sparsity).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Ramirez - Classification of Cancer Types Using Graph Convolutional Neural Networks
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer types (33 cancers and normal) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Graph models
+      		
+          </td><td class="col4">
+      		
+      		   Two different input graphs were generated, a gene co-expression graph (based on correlation between gene expressions) and a protein-protein interaction graph from the STRING database. These inputs are passed into a graph convolutional layer followed by hidden layers and a classifier. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Nave - Artificial immune system features added to breast cancer Clinical  data for machine learning (ML) applications
+      		
+          </td><td class="col2">
+      		
+      		   Predict tumor size at different time points for breast cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   This study aims to use ML to predict the tumor size for each time point based on the imaging data. A mathematical model was used to extract immunological features, which are then used as inputs into ML model together with Clinical  features
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Liu - TranSynergy- Mechanism-driven interpretable deep neural network for the synergistic prediction and pathway deconvolution of drug combinations
+      		
+          </td><td class="col2">
+      		
+      		   Predict efficiency of drug combination and serve as screening for downstream experimental evaluation 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   In the drug response prediction, the input are two drug molecules in the drug combination and a cell line (gene expressions). The authors argue that using the chemical structure of drugs as features it is not straightforward to connect with the cellular mechanisms of drug action. Biological representation based on drug-target interaction profile is a better strategy to infer the drug representation vector. They used protein-protein-interaction network features. Random walk with restart algorithm was applied on a protein-protein interaction network to infer drug-target profile as the drug features. From gene expressions, the gene-gene dependency profiles were extracted.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Liu - Real time volumetric MRI for 3D motion tracking via geometry-informed deep learning
+      		
+          </td><td class="col2">
+      		
+      		   Reconstruction of accelerated MRI
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - other
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   In this neural network, the authors added an explicit geometry-module that encodes the k-space sampling patterns and known transforms between the k-space and image domains.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Li - Informed Attentive Predictors- A Generalisable Architecture for Prior Knowledge-Based Assisted Diagnosis of Cancers
+      		
+          </td><td class="col2">
+      		
+      		   Predict (classification) whether a sample is tumoral or normal for different types of cancers. 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Probabilistic Relationships
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   This model outputs prediction as a function of the data-driven prediction and knowledge-based prediction. They generated knowledge-based predictions based on the intuition that samples whose difference with normal samples is more similar to the mutation patterns known from knowledge are more likely to be tumoral. In detail: 1) Extracted a knowledge vector representing gene mutation rate for each gene from an exterior data source. 2) Generated a reduced version of original feature vectors to match the dimensions of the knowledge vector. 3) Computed a general representation for normal samples by projecting original features into 1-d vector. 4) For each sample, computed their difference with this normal sample vector. The similarity between this difference and the knowledge vector determines the likelihood of a sample between tumor, thus, generates a knowledge-based “prediction”. 5) The final prediction is a function of the prediction by original data and from this knowledge-based prediction. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Kaandorp - Improved unsupervised physics- informed deep learning for intravoxel incoherent motion modeling and evaluation in pancreatic cancer patients
+      		
+          </td><td class="col2">
+      		
+      		   Estimate three parameters of the Intravoxel incoherent motion (IVIM) model for diffusion-weighted imaging (DWI) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Physics-informed Neural Networks
+      		
+          </td><td class="col4">
+      		
+      		   Designed an unsupervised NN to predict the three IVIM parameters of interest. The model minimizes a physics-based loss that measures the difference between the original signal and “reconstructed” signal based on the IVIM model and NN estimated parameters.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Joshi - OncoNet- Weakly Supervised Siamese Network to automate cancer treatment response assessment between longitudinal FDG PET CT examinat
+      		
+          </td><td class="col2">
+      		
+      		   Classify the treatment outcome (preogression, resolution, stable) of patients with lung cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   Since expert annotation is costly, this work used rule based heuristics to extract Standard Uptake Values (SUVmax) of metabolically active tumors from radiology reports. Then used differences in the SUVmax values between scans to derive the weak labels (progression, resolution, stable). This heuristic is based on the Lugano 2014 criteria for tumor evaluation, assessment, and prediciton.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Johnson - Integrating transcriptomics and bulk time course data into a mathematical framework to describe and predict therapeutic resistance in cancer
+      		
+          </td><td class="col2">
+      		
+      		   Predict therapeutic resistance in breast cancer by improved model calibration 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Mathematical models of tumor progression often include distinct subpopulations. Despite these models are calibrated to experimental data, single biomarkers do not capture longitudinal patterns. The study proposed an integrated model calibration scheme that integrates information from two data sources: (i) from longitudinal population data sampled at high temporal resolution for a number of doses, and (ii) machine learning outputs that estimate the phenotypic composition at three time points before and after treatment. The ML model was trained to classify phenotype of cells based on its transcriptome. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - He - Cross-modality brain tumor segmentation via bidirectional global-to-local unsupervised domain adaptation
+      		
+          </td><td class="col2">
+      		
+      		   Segment brain tumors from multi-modal MRI for tumor diagnosis and treatment
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   This paper proposed a framework that can segmenta brain tumors in one MRI modality (target domain) when trained on another MRI modality (source domain). To account for domain shift, they used a bidirectional module that learns how to generate synthetic image from one domain to another, and a global-to-local adaptor that aligns the real and synthetic images. Also, spatial-wise and channel-wise attention maps were used to transfer the most discriminate part of features through domains, assuming that silences of the images are consistent inter-domain. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Feng - Investigating the relevance of major signaling pathways in cancer survival using a biologically meaningful deep learning model
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug response for cancer patients (breast cancer, lung, glioblastoma, skin)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   The 46 signaling pathways from four types of cancer and 1967 genes were selected to design a customized deep learning model architecture. The input layer consisted two input features (gene expression and copy number variation) for each gene. Then genes were connected to the pathways based on known connections. Model was evaluated on four datasets of four types of cancer.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Erion - Improving performance of deep learning models with axiomatic attribution priors and expected gradients
+      		
+          </td><td class="col2">
+      		
+      		   Predict (regression) drug response for patients with acute myeloid leukemia (AML). 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   The knowledge graph is used to regularizes the loss function so that relative feature contributions are consistent with the known probability of integration of gene (called graph prior). 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Elmarakeby - Biologically informed deep neural network for prostate cancer discovery
+      		
+          </td><td class="col2">
+      		
+      		   Predict the disease sate (classification) of prostate cancer and better understanding of the relationship between Molecular features and the disease.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   A customized neural network architecture is designed based on biological knowledge, where each layer and node have a specific biological interpretation, and only connections that follow known pathways are activated and others are zero-out. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Chuang - Convolutional neural network for human cancer types prediction by integrating protein interaction networks and omics data
+      		
+          </td><td class="col2">
+      		
+      		   Predict normal vs tumor samples for 11 cancer types
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   A large number of PPIs of human proteins were collected from five public databases. Laplacian clustering approach was used to map PPI networks into 2D space, then combined with gene expression data, to generate normal and tumor sample images for CNN model training.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Azher - Development of Biologically Interpretable Multimodal Deep Learning Model for Cancer Prognosis Prediction
+      		
+          </td><td class="col2">
+      		
+      		   Predict patient survival risk scores for four types of cancers (colon, bladder, skin, liver)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   First, pre-trained an encoder (VAE) that has biologically informed architecture. The nodes of the first two layers represent gene entities. The connections are initialized based on known biological relationships (CpG to gene, gene to pathway). After VAE is pre-trained, the encoder weights are transferred as initialization for an ANN to learn prediction model. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2021 - Anastopoulos - Patient Informed Domain Adaptation Improves Clinical  Drug Response Prediction
+      		
+          </td><td class="col2">
+      		
+      		   Predict patient drug response using cross-domain data (cell line and primary tumor)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - private
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Used Mean Maximum Discrepancy (MMD) as a loss term to encourage alignment of the latent space of cell line and tumor samples. Additionally, uses weight sharing for both cell line and tumor sample data neural networks. Represented each drug molecule as a graph (nodes are atoms and edges are bonds between atoms) then extracted latent representation via GCN.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Vu - Deep convolutional neural networks for automatic  segmentation of thoracic
+      		
+          </td><td class="col2">
+      		
+      		   Segment thoracic organs‐at‐risk in radiation oncology for treatment planning of lung cancer, esophagus cancer, or breast cancer.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Transfer learning is applied by using locking the weights from a VGG16 image classiﬁcation model trained on ImageNet. When adapting to the target dataset, activation function is modified, a batch normalization layer and a dropout layer are added.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Seninge - Biological network-inspired interpretable variational autoencoder
+      		
+          </td><td class="col2">
+      		
+      		   Knowledge discovery and better interpretation of biological mechanisms and the underlying gene regulatory networks (GRN) of single-cell GBM
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   Used a data-driven encoder to capture the complex patterns and a sparse knowledge-based decoder to allow explainability. In detail, the decoder is a single linear layer that zeros-out the connection between the latent layer and input layer if it belongs to a known biological abstraction. Also, the decoder is constraint to positive weights to maintain explainability of direction of biological activity. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Ozdemir - A 3D Probabilistic Deep Learning System for Detection and Diagnosis of Lung Cancer Using Low-Dose CT Scans 
+      		
+          </td><td class="col2">
+      		
+      		   Screening and risk diagnosis of lung cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   Used expert-assigned scores as noisy labels to train a malignancy ranking network. This network ranks segmented nodules within each CT scan by their malignancy risk. The top-k nodules are then used to train a multitask classification network. (The intuition is that each CT scan may have a large number of nodules, the ranking helps reduce noise and focus on those that are more likely to be malignant.)
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Oh - PathCNN- interpretable convolutional neural networks for survival prediction and pathway analysis applied to glioblastoma
+      		
+          </td><td class="col2">
+      		
+      		   Predict long-term survival for patients with glioblastoma multiforme (GBM). 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   For each of the three omics types, organized data into a matrix where each column represent a pathway and each row represent a gene. Then, performed PCA on each matrix. Finally, combined PCs of all omics types into a pathway image ordering the pathways based on their correlation. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Liu - A Natural Language Processing Pipeline of Chinese Free-Text Radiology Reports for Liver Cancer Diagnosis
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer vs normal for patients with liver cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Knowledge from Experts - Qualitative
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   Used expert knowledge to extract Clinical ly meaningful features (also called named entity recognition), which are then used for classification. First, used expert knowledge to derive a specialized lexicon (a list of Clinical ly relevant words and synonyms). Then, trained a language model using both original text and lexicon coded text to detect relevant entities. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Leung - A physics-guided modular deep-learning based automated
+framework for tumor segmentation in PET
+      		
+          </td><td class="col2">
+      		
+      		   Segmentation of tumor from PET
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Simulation
+      		
+          </td><td class="col4">
+      		
+      		   This method tackles the challenges of limited spatial resolution of PET and limited labeled data. Physic-sbased simulation is used generate synthetic images. Specifically, first- and second-order statistics for the intensity, size, shape, intra-tumor heterogeneity, and tumor-to-background intensity ratio are extracted. The kernel distribution of tumor descriptors are fed into a PET system modeling the major image-degrading processes in PET such as detector blurring with a 5 mm full-width-at-half-maximum (FWHM). Intra-tumor heterogeneity was simulated by incorporating unimodal variability in intensity values within the tumor and, for some tumors, by modeling the intensity distribution as a mixture model. Data from multiple patients were used to simulate patient heterogeneity. Tumor seed locations were manually selected such that generated tumors would appear at visually realistic locations. The simulated data is used to pre-train a U-Net. Real medical data is used to fine-tune the U-Net.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Lee - Cancer subtype classification and modeling by pathway attention and propagation
+      		
+          </td><td class="col2">
+      		
+      		   Classification of sample type and knowledge discovery/interpretation of important pathways
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Graph models
+      		
+          </td><td class="col4">
+      		
+      		   Pathways from KEGG are obtained as prior knowledge. Each pathway is represented as a graph. The gene expression profiles is amapped to the nodes of this pathway graph, where the node feature vector represent the numbe of genes in the pathway. The input graph is first passed to a GCN to capture localized patterns. One model is built for each pathway. Then, the pathway-level attention and ensemble-level attention are used to ensemble the features which are then used to produce final cancer subtype predictions.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Kuenzi - Predicting Drug Response and Synergy Using a Deep Learning Model of Human Cancer Cells
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug sensitivity of tumor cells
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   Learnt genotype embedding using a network whose layers and connections are based on known biological processes. Learnt drug structure embedding using a CNN with the same number of output nodes as the genotype embedding so they can be concatenated. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Kozłowska - Mathematical model predicts response to chemotherapy in advanced non-resectable non-small cell lung cancer patients treated with platinum-based doublet
+      		
+          </td><td class="col2">
+      		
+      		   Predict anticancer treatment response to chemotherapy to find optimal treatment schedule for patients with 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   This study developed a method that combines mathematical mechanistic modeling with ML to estimate response to anticancer treatment for each patient. The authors replaced calibration of the mechanistic model using mixed-effect learning with calibration mainly based on a multivariate Gaussian-mixture model.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Ke - Identifying patch-level MSI from histological images of Colorectal Cancer by a Knowledge Distillation Model
+      		
+          </td><td class="col2">
+      		
+      		   Identify microsatellite instability (MSI) status in colorectal cancer for better prognosis.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   Most existing models just use the whole-slide label as groudn truth for each patch in the whole-slide image. However, this causes mislabeling of many local patches. To address the mislabeling problem, a self-distillation model was first used to separate data into high fidelity and low fidelity patches. Then, one-shot active learning was used where pathologists picked up the most representative samples from high-fidelity data and tagged them as clean data for noise-robust training. The self-distillation model reduced the efforts of pathologists.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - He - Infusing Disease Knowledge into BERT for Health Question Answering, Medical Inference and Disease Name Recognition
+      		
+          </td><td class="col2">
+      		
+      		   Derive text data embeddings that can be used for downstream tasks including:1. consumer health question answering, 2. medical language inference, 3. disease name recognition. (Not just for cancer but I believe the diseases include some cancer)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - public
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   Used the structure of Wikipedia to extract “weakly-supervised passages” containing disease knowledge. Specifically, the title of the article is the disease name, and the title of the section is the topic aspect of the disease. Then, used these passages to create additional samples used in training. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Garcia - Transfer learning with convolutional neural networks for cancer survival prediction using gene-expression data
+      		
+          </td><td class="col2">
+      		
+      		   Predict progression of lung cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Pre-trained CNN on data of 31 cancers except lung cancer, then fine-tuned using lung cancer data.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Fortelny - Knowledge-primed neural networks enable biologically interpretable deep learning on single-cell sequencing data
+      		
+          </td><td class="col2">
+      		
+      		   Predict cell type from gene expression
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   Prior knowledge from signaling pathways and gene-regulartory networks are used to build knowledge-primed neural networks. Each node corresponds to a protein or a gene, and each edge corresponds to a regulatory relationship documented in biological databases. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Deng - Pathway-Guided Deep Neural Network toward Interpretable and Predictive Modeling of Drug Sensitivity
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug sensitivities and undersand mechanisms of drug action
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   To reduce dimensionality, the authors selected 977 landmark genes. Inputs to the network include cell line feature nodes and drug target feature nodes. The architecture is customized by adding a layer of pathway nodes and their connections to input gene nodes. The rest of network are data-driven and fully connected. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2020 - Boso - Drug delivery- Experiments, mathematical modelling and machine learning
+      		
+          </td><td class="col2">
+      		
+      		   Simulate tumor growth and drug action for a proper modeling of drug delivery and efficacy in anticancer therapy
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   The drug-induced cell death rate is a parameter difficult to estimate experimentally. Machine learning was found helpful because it is able to catch the more complex physics and therefore to identify the necessary parameters. Neural networks was used to learn the relation between the involved quantities, by learning the mapping of
+input - output data.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Zheng - Semi-supervised segmentation of liver using adversarial learning with deep atlas prior
+      		
+          </td><td class="col2">
+      		
+      		   Segmentation of liver in CT images (not targeted for tumor but can be applied to tumor.)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Probabilistic Relationships
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   The probability atlas provides the prior statistical probabilty that the liver appears at each pixel location. The authors assumed that hard samples are those with atlas values close to 0.5, then the hard samples are given maximal weight in the loss function whereas the easy samples are given small weight. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Yazdjerdi - Reinforcement learning-based control of tumor growth under anti-angiogenic therapy
+      		
+          </td><td class="col2">
+      		
+      		   Control drug dosing in cancer antiangiogenic therapy 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   This work designed a RL-based controller for cancer antiangiogenic therapy by implementing the Q- learning algorithm to control drug dosing. The mathematical model of tumor growth under angiogenic inhibitor is simplified and used to represent a simulated patient and provide feedback to the controller.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Wang - Weakly supervised deep learning for whole slide lung cancer image analysis
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer type into tumor vs non-tumor (lung0
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   The model is trained using both image-level class labels and a small number of coarse annotations of abnormal regions by pathologists. The cross-entropy loss is modified such that higher penalty is given when the CNN misclassifies patches that fall into annotated regions.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Wang - A dual-mode deep transfer learning (D2TL) system for breast cancer detection using contrast enhanced digital mammograms
+      		
+          </td><td class="col2">
+      		
+      		   Classify benign vs malignant tumors for breast cancer using the contrast-enhanced digital mammography (CEDM) data.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Transfer learning is used in training the dual-mode DL model, in which a pre-trained Inception V3 on ImageNet is used to initialize the parameter estimation, and then the CEDM data are used to fine-tune the parameters.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Tomita - Attention-Based Deep Neural Networks for Detection of Cancerous and Precancerous Esophagus Tissue on Histopathological Slides
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer prototype (skin cancer)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Customized model views
+      		
+          </td><td class="col4">
+      		
+      		   The model dynamically identifies ROIs in the whole-slide image and makes classification based on the selected ROIs. The model is composed of two modules, the first module extracts grid-based features and the second is attention module that generates an attention map used to weight the features, both trained end-to-end using image-level labels.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Shao - Weakly Supervised Deep Ordinal Cox Model for Survival Prediction From Whole-Slide Pathological Images
+      		
+          </td><td class="col2">
+      		
+      		   Predict survival of patients with multiple types of cancer (censored vs non-censored)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Before classification, the samples (patches) were clustered into k distinct phenotype groups using Kmeans. Then generated a bag of patches by stratified sampling from the clusters. This intents to match the bag heterogeneity with WSI-level heterogeneity. The original label is binary. The authors compared the survival time (continuous) between pairs of patients to create ordinal labels of wether a sample survived long than another sample. They added a ranking loss to the objective function so the model can also learn from this ordinal information.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Sha - Multi‑Field‑of‑View Deep Learning Model Predicts Nonsmall Cell Lung Cancer Programmed Death‑Ligand 1 Status from Whole‑Slide Hematoxylin and Eosin Images
+      		
+          </td><td class="col2">
+      		
+      		   Predict the programmed death-ligand 1 (PD-L1) status from whole-slide images for nonsmall cell lung cancer (NSCLS) tumor samples. 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Customized model views
+      		
+          </td><td class="col4">
+      		
+      		   Designed a NN with multi-field of view classification to mimic the pathologist using various zoom levels. The NN consists of one network that processes a large image and two additional branches that process small cuts of the central region of the image. This design ensures that the central region contributes more to classification. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Sevakula - Transfer Learning for Molecular Cancer Classification Using Deep Neural Networks
+      		
+          </td><td class="col2">
+      		
+      		   Classify any two tumor types with stacked autoencoder by (high dimensional) gene expression data.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   A stacked sparse autoencoder is pre-trained by unlabeled data for  feature selection and normalization for cancer classification on gene expression data. While classifying any two tumor types, data of other tumor types were used in unsupervised manner to improve the feature representation. Tested on 36 two-class benchmark datasets from the GEMLeR repository.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Nguyen - Incorporating human and learned domain knowledge into training deepneural networks- A differentiable dose-volume histogram and adversarialinspired framework for generating Pareto optimal dose distributions inradiation therapy
+      		
+          </td><td class="col2">
+      		
+      		   Predict Pareto optimal dose distributions in radiation therapy for prostate cancer patients with seven beam IMRT.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed a domain-specific loss, which was a differentiable loss function based on the dose-volume histogram (DVH), and combined it with an adversarial loss for the training of deep neural networks to generat Pareto optimal dose distributions in radiation therapy (for prostate cancer patients).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Nguyen - A feasibility study for predicting optimal radiation therapy dose distributions of prostate cancer patients from patient anatomy using deep learning
+      		
+          </td><td class="col2">
+      		
+      		   Predict optimal radiation therapy dose distributions (3D) of prostate cancer patients using U-net.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   U-net is used to predict fully 3D dose distribution prediction for prostate IMRT plans according to the treatment plans from physician.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Nguyen - 3D radiotherapy dose prediction on head and neck cancer patients with a hierarchically densely connected U-net deep learning architecture
+      		
+          </td><td class="col2">
+      		
+      		   Predict 3D radiotherapy dose  on head and neck cancer patients by  a hierarchically densely connected U-net.
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   A deep learning-based dose prediction model, Hierarchically Densely Connected U-net, based on U-net and DenseNet is used to predict the 3D radiotherapy dose distribution of head and neck cancer patients. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Mercan - Assessment of Machine Learning of Breast Pathology Structures for Automated Differentiation of Breast Cancer and High-Risk Proliferative Lesions
+      		
+          </td><td class="col2">
+      		
+      		   Diagnosis (multi-class classification) of breast biopsy samples from whole slice images 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   Used  a sequential classification scheme in which a decision is made for a single diagnosis at a time to mimic the pathologists. The reasoning is features that describe one type of diagnosis do not apply to other diagnosis. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Ma - Incorporating Biological Knowledge with Factor Graph Neural Network for Interpretable Deep Learning
+      		
+          </td><td class="col2">
+      		
+      		   Predict Progression-Free Interval event
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   (Very similar model as Ma, 2018) Computed a similarity matrix of learned feature representations (pairwise mutual information) and forces it to be consistent with feature relationships based on domain knowledge.    
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Ma - Incorporating Biological Knowledge with Factor Graph Neural Network for Interpretable Deep Learning
+      		
+          </td><td class="col2">
+      		
+      		   Predictor tumor stage for lung cancer (2 stages) and kidney cancer samples (3 stages); Classify tumor sample tyle (primary tumor vs normal)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   Customized the network architecture such that i) each node corresponds to some biological entity, ii) only connect nodes that can reach each other in the knowledge graph within a number of steps. The later can be seen as an attention mechanism to capture hierarchical interactions among biological entities. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Liu - Automated detection and classification of thyroid nodules in ultrasound images using Clinical -knowledge-guided convolutional neural ne
+      		
+          </td><td class="col2">
+      		
+      		   Segment and classify nodule in ultrasoud images
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Hyperparameter setting
+      		
+          </td><td class="col4">
+      		
+      		   Designs an expert-knowledge-guided multi-branch networkfor nodule detection. Similar to Faster R-CNN, the proposed network predicts region proposals for object detection. The authors computed the real distribution of nodule size and shape in training data to constrain the anchor boxes (lower feature maps to have smaller sizes and larger range of aspect ratios than those at higher feature maps). Based on how radiologists classify the challenging nodules (e.g. difference with surrounding tissies may reflect cell proliferation, malignant nodules tend ot have blur and irregular margin due to rapid growth), they proposed a triple-branch design to uses sonographic features known to be correlated with malignant nodules. The first branch is basic low-level features (takes original patches as input), second branch is context features (takes larger patches as input), and third branch is margin features (takes contour-masked margin regions as input). 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Hu - Accurate Patient-Specific Machine Learning Models of Glioblastoma Invasion Using Transfer Learning 
+      		
+          </td><td class="col2">
+      		
+      		   Predict tumor Cell Density for patients with primary GBM 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   This work implemented both univariate and multivariate individualized transfer learning predictive models, built in a Baysian framework, which harness the available population-level data but allow individual variability in their predictions (same methodology as 79).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Gaw - Integration of machine learning and mechanistic models accurately predicts variation in cell density of glioblastoma using multiparametric MRI
+      		
+          </td><td class="col2">
+      		
+      		   Predict tumor Cell Density for patients with primary GBM 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   This work presented a novel hybrid model, based on multiparametric intensities, which combines machine learning (ML) with a mechanistic model of tumor growth (PI) to provide spatially resolved tumor cell density predictions. The ML component is an imaging data-driven graph-based semi-supervised learning model .
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Gao - DeepCC- a novel deep learning-based framework for cancer Molecular subtype classification
+      		
+          </td><td class="col2">
+      		
+      		   Classify colorectal and breast cancer subtypes, i.e. cancer Molecular subtyping
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Transformed original gene expression profiles to a vector of enrichment scores by doing a gene set enrichment analysis (GSEA ) for each sample’s genes on thousands of gene sets from public knowledge database. This new feature vector quantify activities of biological pathways and is used as input to classifier. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Gao - A feature transfer enabled multi-task deep learning model on medical imaging
+      		
+          </td><td class="col2">
+      		
+      		   Mass classification, mass detection, and segmentation for breast cancer patients
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - public
+Integration: Multitask learning
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed an multitask deep learning model enabled by feature transfer. The proposed model utilized the different tasks from the same domain.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Deist - Simulation-assisted machine learning
+      		
+          </td><td class="col2">
+      		
+      		   Predict anti-cancer drug sensitivity (unknown cancer type)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Generated simulations of each sample using the feature vector, then computed the similarity between the simulation output of each pair of samples. This similarity, rather than original high-dimensional features, is used to build a kernel for use in kernelized ML models. The simulation was done multiple times controlling for the uncertainty of simulation parameters. Shown effective when number of samples &lt; number of features. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Cheng -  Network-based prediction of drug combinations
+      		
+          </td><td class="col2">
+      		
+      		   Identify effective drug combinations for hypertension and cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Graph models
+      		
+          </td><td class="col4">
+      		
+      		   This paper built a network of nearly two thousand Clinical ly approved drugs. Drug-target binding profiles were pooled from multiple data sources and the proximity between two drug’s targets were measured based on the interactome between the targets of each drug. Once the network was built, the topological relationship between two drug-target modules reflect whether drugs are pharmacologically distinct, complementary, indirectly similar, similar, or independent. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Campanella - Clinical -grade computational pathology using weakly supervised deep learning on whole slide images
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer type into tumor vs non-tumor (breast, prostate) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   The slide-level diagnosis are weak labels for the tiles within a slide. If a slide is positive, then at least one tile must contain tumor. If a slide is negative, then all tiles must not contain tumor. This can be formulated as multiple-instance learning (MIL) problem. This work trained a CNN with weak labels at tile-level. Ranks the tiles by their probability of being positive. Then learns a RNN by sequentially passing top-ranked tiles from each slide to integrate tile-level classification into slide-level.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2019 - Banerjee - Weakly supervised natural language processing for assessing patient-centered outcome following prostate cancer treatment
+      		
+          </td><td class="col2">
+      		
+      		   Annotate Clinical  notes with patient outcomes (three classes: affirmed, negated, discussed risk) for patients with prostate cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - public
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed a method to annotate Clinical  notes without requiring ground-truth annotations. They used three domain-specific dictionaries to derive example artificial expressions for each class, which were used create weak labels for training data. A supervised model is then used to learn from weakly labeled training data. The proposed knowledge-guided model is compared with data-driven generative models. Used medical dictionary to clean the text data (combine related terms together, reduce sparsity).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Turki - A transfer learning approach via procrustes analysis and mean shiftfor cancer drug sensitivity prediction
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug sensitivity for patients with myeloma and lung cancer. 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Transferred half of the auxiliary data from a related task to be trained with the original dataset. In detail, performed CUR decomposition on original data to extract a low-rank low dimensional representation. Then, adjusted each sample from auxiliary data towards target domain using 1) kernel average of their neighbors from original dataset, and 2) SVD of the two datasets. Finally, selected a subset of samples from auxiliary data to be trained with the original dataset. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Rathore - Radiomic signature of infiltration in peritumoral edema predicts subsequent recurrence in glioblastoma: implications for personalized radiotherapy planning 
+      		
+          </td><td class="col2">
+      		
+      		   Estimate peritumoral edema infiltration regions using radiomic signatures determined via ML
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   A classification model was trained to classify voxels into belonging to near-tumor ROI (N-ROI) or far-from-tumor ROI (F-ROI). This classification proability is used as the infiltration score. The assumption is that N-ROI and F-ROI are expected to have relatively higher and lower infiltration. The estimated infiltration maps are compared to recurring ROI (R-ROI) and nonrecurring ROI (NR-ROI) regions drawn by the experts. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Ma - OmicsMapNet- Transforming omics data to take advantage of Deep Convolutional Neural Network for discovery 
+      		
+          </td><td class="col2">
+      		
+      		   Predict the grade of LGG and GBM tumor samples.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Transformed gene data into images based on their functional hierarchy. Specifically, used the hierarchical gene structure from KEGG database to build a five-layer tree, mapping the gene expressions according to the child nodes of the tree (a gene can exists at multiple nodes). Then, converted the tree into an image using the pivot method based on their adjacency in the tree and sorting the genes according to the median values across all samples. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Ma - Multi-view Factorization AutoEncoder with Network Constraints for Multi-omic Integrative Analysis
+      		
+          </td><td class="col2">
+      		
+      		   Predict Progression-Free Interval event (a binary outcome that indicates the patient had a new tumor event in a fixed period, implying the treatment outcome is unfavorable) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Extracted a Molecular interaction network from external knowledge database. Used Laplacian regularizer to force consistency between the learned feature representation and the feature interaction network from domain knowledge. Additionally, used patient similarity networks to regularize the same set of patients are consistent with each other.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Lyu - Deep Learning Based Tumor Type Classification Using Gene Expression Data
+      		
+          </td><td class="col2">
+      		
+      		   Classify tumor type (tumor vs normal) for multiple types of cancer  
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Other
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Transformed gene data into images based on their relative position according to their chromosome numbers. Each rectangle represents one gene and the value is normalized gene expression level. The intuition is that adjacent genes are more likely to interact with each other. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Liu - Integration of biological and statistical models toward personalized radiation therapy of cancer
+      		
+          </td><td class="col2">
+      		
+      		   Predict treatment outcome (rectal complication) for patients with prostate cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Proposed a general framework to integrate biological equations with patient-specific data. First, identified parameters in the biological model that are meaningful to be personalized, i.e. learnt from patient-specific data. Then, derived the optimization problem that predicts the response variable based on the biological model but uses personalized parameters estimated from patient-specific data. Knowledge was also used to define nonnegativity constraints of certain variables. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Hu - Accurate Patient-Specific Machine Learning Models of Glioblastoma Invasion Using Transfer Learning
+      		
+          </td><td class="col2">
+      		
+      		   Predict Tumor Cell Density for patients with GBM 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   Used Transfer Learning to build one model for each patient then biasing the model towards the population pattern using a Bayesian framework. Also, constrained knowledge transfer from patients with a certain threshold for correlation between one imaging measure and the response.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Hao - PASNet- pathway-associated sparse deep neural network for prognosis prediction from high-throughput data
+      		
+          </td><td class="col2">
+      		
+      		   Predict survival for patients with GBM
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Biologically-informed neural networks
+      		
+          </td><td class="col4">
+      		
+      		   The authors extracted 574 pathways and 4359 genes from public databases. A deep learning model called PASNet is designed using these pathways. The architecture consists of a gene layer, a pathway layer, a hidden layer, and an output layer. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Dincer - DeepProfile- Deep learning of cancer Molecular profiles for precision medicine
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug response for patients with acute myeloid leukemia (AML)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   Trained a VAE using large amount of public unlabeled data from other patients with the same cancer type to learn a robust latent feature representation. Then used these feature vector to train drug response model. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Babier - Knowledge‐based automated planning for oropharyngeal cancer
+      		
+          </td><td class="col2">
+      		
+      		   Predict 3D dose treatment plans (applied to oropharyngeal cancer patients)
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   First, a knowledge-based planning (KBP) model (bagging query (BQ) method or the generalized principal component analysis-based (gPCA) method) was trained to predict the dose distribution. These predictions from KPB model were then passed through an optimization pipeline to generate the ﬁnal ﬂuence-based treatment plans. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Babier - Knowledge-based automated planning with three-dimensional generative adversarial networks
+      		
+          </td><td class="col2">
+      		
+      		   Predict 3D dose treatment plans (applied to oropharyngeal cancer patients)
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   First, GAN was trained to predict the dose distribution given a contoured CT image. These predictions from generators of GAN were then passed through an optimization pipeline to generate the ﬁnal ﬂuence-based treatment plans. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2018 - Abid - Exploring patterns enriched in a dataset with contrastive principal component analysis
+      		
+          </td><td class="col2">
+      		
+      		   Find trends and variationsin gene expression levels of cancer patients that are useful t identify Molecular subtypes of cancer.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   This paper proposed contrastive PCA (cPCA), which finds low-dimensional sturcutres that are enriched in the dataset relative to comparison data. The method is applied to data of cancer patients to find low-dimensional representations that separate them from the data of healthy controls from a similar demographic background. cPCA can be used as the feature extraction method and for denoising, where the backgroudn dataset serves to remove the universal but uninsteresting variation in the target dataset.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Padmanabhan - Reinforcement learning-based control of drug dosing for cancer chemotherapy treatment
+      		
+          </td><td class="col2">
+      		
+      		   Control cancer chemotherapy drug dosing.
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-in-the-loop
+      		
+          </td><td class="col4">
+      		
+      		   This work developed a RL-based control strategy for cancer chemotherapy treatment doses. A mathematical model of cancer drug dynamics was used to provide feedback to the RL-based controller.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Min - Predicting activities of daily living for cancer patients using an ontology-guided machine learning methodology
+      		
+          </td><td class="col2">
+      		
+      		   Predict activities of daily living disabilities for the first year after a patient’s cancer diagnosis 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - public
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Mapped data into concept unique identifiers (CUI) of UMLS, which helps translate medical terms among diverse data sources. Identified base concepts, and from them, extracted hierarchies of related concepts. Applied AQ21 algorithm to learn generalizable rules that can predict disabilities.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Grady - Experience Based Quality Control in IMRT Treatment Planning of High Risk Post-Prostatectomy Prostate Cancer with RapidPlan
+      		
+          </td><td class="col2">
+      		
+      		   Develop a knowledge based planning (KBP) model for the treatment plan of high risk post-prostatectomy prostate cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   An initial dosimetric analysis was carried out to identify high quality plans from Clinical  trial. Then, Principal Component Analysis (PCA) is used to characterize the salient features of the patient anatomy (CT) and dose distribution (treatment plans) and Support Vector Regression (SVR) is used to model their correlation.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Geeleher - Discovering novel pharmacogenomic biomarkers by imputing drug response in cancer patients from large genomics studies 
+      		
+          </td><td class="col2">
+      		
+      		   Predict drug response and discover novel biomarkers in Clinical  cancer datasets; Classification of tumor samples for breast, blood, lung, skin, and central nervous system cancers.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   PreClinical  datasets are small but more straightforward to collect drug response. The goal is to use large Clinical  datasets for pharmacogenomics discovery without having to collect drug response data. Used a preClinical  dataset to train a model for drug response and gene expression, then applied the estimated model to impute drug response for the Clinical  dataset of interest. This strategy assumes that if it is possible to predict drug response using cell line-derived gene expression, it should be possible for similar models.   
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Ferranti - The value of prior knowledge in machine learning of complex network systems
+      		
+          </td><td class="col2">
+      		
+      		   Predict patient drug response and phenotype (both as classification) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature grouping
+      		
+          </td><td class="col4">
+      		
+      		   Unlike other papers that uses real data, this paper used synthetic data to evaluate whether using knowledge can improve performance of ML models. They used synthetic biological networks to generate data and compared models without knowledge (using data from all nodes to predict the super-nodes) vs. with knowledge (using nodes that are known to be directly connected to the super-nodes). 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Esteva - Dermatologist-level classification of skin cancer with deep neural networks
+      		
+          </td><td class="col2">
+      		
+      		   Classify disease subtype for patients with skin lesion (3-way and 9-way classication)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Auxiliary Datasets - public
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   Used the Clinical  taxonomy to partition disease subtypes into fine-grained training classes (as many as +700 classes) because training on finer classes showed improved classification. Trained a deep learning model to predict the finer classes. Then, aggregated the prediction of finer classes to recover the prediction of coarser classes. (However, this method requires labels for all subclasses to be available) 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Corredor - Training a cell-level classifier for detecting basal-cell carcinoma by combining human visual attention maps with low-level handcrafted features
+      		
+          </td><td class="col2">
+      		
+      		   Classification of cancer type into tumor vs non-tumor (skin) 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   This model extracts a visual attention map from actions performed by pathologists while navigating WSIs to inform the low-level feature algorithm where in the images to initially “look”. First, segmented all nuclei from the WSI and computed their low-level features. When pathologists look at the images, they can only see a window of reference instead of the entire image. Each nucleus is assigned a likelihood of cancerous based on the number of times the nucleus is visited by pathologists. Then, computed the importance of each feature by performing linear regression of features with the likelihood. The classifier SVM was trained using weighted-features. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2017 - Ammad-ud-din - Systematic identification of feature combinations for predicting drug response with Bayesian multi-view multi-task linear reg
+      		
+          </td><td class="col2">
+      		
+      		   Predict anti-cancer drug response and identify which feature combinations are the most predictive  
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature grouping
+      		
+          </td><td class="col4">
+      		
+      		   Extracted functional-linked-networks from prior biological knowledge and used these to select features and split the data into “views”. Then used a multi-view regression, where each feature has a feature-specific weight and a view-specific weight, to predict drug response. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2016 - Shiraishi - Knowledge‐based prediction of three‐dimensional dose distributions for external beam
+      		
+          </td><td class="col2">
+      		
+      		   Predict three-dimensional dose distributions for external beam radiotherapy
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   Using previously treated plans as training data, this work proposed an artificial neural network (ANN) to predict a dose matrix based on patient-specific geometric and planning parameters, such as the closest distance (r) to planning target volume (PTV) and organ-at-risks (OARs).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2016 - Kim - Integrating Domain Specific Knowledge and Network Analysis to Predict Drug Sensitivity of Cancer Cell Lines
+      		
+          </td><td class="col2">
+      		
+      		   Predict anticancer drug response (resistance vs sensitive) of cell lines
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   Selected features (genes) based on domain knowledge about which genes are apoptotic. Conducted literature search of prescribed Clinical  dose of the drugs. Then used this dose to derive two cutoff values to obtain binary labels for drug sensitivity and drug resistance.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2016 - Ammad-ud-din - Drug response prediction by inferring pathway-response associations with kernelized Bayesian matrix factorization
+      		
+          </td><td class="col2">
+      		
+      		   Predict anti-cancer drug response and generate hypothesis between drug and pathway activation 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature grouping
+      		
+          </td><td class="col4">
+      		
+      		   Used prior knowledge to split data into components such that each group represented one pathway. Then used component-wise multiple kernel learning to predict drug response. The model learns component-specific kernel weights, which can be used to infer hypothesis of pathways (components) associated with drug responses. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2016 - Aben - TANDEM a two-stage approach to maximize interpretability of drug response models based on multiple Molecular data types
+      		
+          </td><td class="col2">
+      		
+      		   Predict anti-cancer drug response 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Knowledge from Experts - Quantitative
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   Used a two-stage approach to improve the interpretability of prediction models and have more balanced contribution of data types. Separated features into upstream data (somatic mutations, CAN, etc., significantly associated with response) and downstream data (gene expression). The downstream is trained on the remaining variability of the upstream model.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Zou - A Transfer Learning Approach for Predictive Modeling of Degenerate Biological Systems
+      		
+          </td><td class="col2">
+      		
+      		   Predict relationship between TF binding sites and gene expression (cancer related cell lines) by other related cell lines
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed a unique prior for the model coefﬁcients of the old domains and new domain. This prior has two hyperparameters characterizing the degeneracy and the correlation structure of the domains, respectively. This work proposed to use a graph to represent the qualitative knowledge about degeneracy (this is knowledge about the features, used to generate a graph and regularize the model) and set the corresponding hyperparameter to be the Laplacian matrix of the graph.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Shiraishi - Knowledge‐based prediction of plan quality metrics in intracranial stereotactic
+      		
+          </td><td class="col2">
+      		
+      		   Predict achievable dose–volume histograms (DVHs) and highly precise DVH-based quality metrics (QMs) in stereotactic radiosurgery/radiotherapy (SRS/SRT) plans
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed mathematical models to predict achievable DVHs based on the geometric relationship of organs-at-risk (OARs) to planning target volumes (PTVs) for plans with/without OAR involvement respectively. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Morino - Predicting disease progression from short biomarker series using expert advice algorithm
+      		
+          </td><td class="col2">
+      		
+      		   Predict progression of patients with prostate cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Clinical 
+Representation: Auxiliary Datasets - private
+Integration: Transfer learning
+      		
+          </td><td class="col4">
+      		
+      		   This model predicts for a target patinet with short, unstable time-series data of biomarkers, while transferring knowledge learnt from other patients with longer time series data who suffered from the same disease. Two datasets were used to construct "experts" (models): a dataset of Canadian patients and another of japanese patients. The experts are weighted based on the similarity of their observations with the target patient. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Krayenbuehl - Evaluation of an automated knowledge based treatment planning system for head and neck
+      		
+          </td><td class="col2">
+      		
+      		   Predict treatment plans for patients with head and neck cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   This work re-planned the treatments for patients with head and neck cancer with Pinnacle Auto-Planning (AP) version 9.10. Only one single cycle of plan optimization using one single template was allowed for AP. The dose plans were evaluated. Additionally, two experienced radiation oncologists blind-reviewed and selected preferred plans.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Cohen - Mathematical Modelling of Molecular Pathways Enabling Tumour Cell Invasion and Migration
+      		
+          </td><td class="col2">
+      		
+      		   Predict the probability of metastasis and understand how genetic interactions between gene mutations can affect the probability of metastasis
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Customized model pipelines
+      		
+          </td><td class="col4">
+      		
+      		   Constructed an “influence network” using prior knowledge. The network is composed of nodes (biochemical species or phenotypes) and edges (activations or inhibitory influence). This network is modeled with Markov decision process with pre-assigned state transition probabilities. Simulated random walks on the network to obtain probabilities to reach a phenotype. Also analyzed the stable states of the network for interpretation of meaningful pathways. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2015 - Chen - Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation and Partition
+      		
+          </td><td class="col2">
+      		
+      		   Classification of tumor category for patients with brain tumor
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Qualitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Based on biological knowledge, tumors of the same category are often located in similar places, such as gliomas usually involve white matter; meningiomas are typically adjacent to skull, gray matter, and cerebrospinal fluid; and pituitary tumors are often adjacent to sphenoidal sinus, internal carotid arteries, and optic chiasma. The authors proposed "tumor region augmentation and partition", which (i) enlarges the tumor ROI to capture possibly informative context, and (ii) partitions it into ring-form subregions, features from each subregion are weighted and concatenated to get final features.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2014 - Xu - Weakly supervised histopathology cancer image segmentation and classification
+      		
+          </td><td class="col2">
+      		
+      		   Classification of tumor type (cancer vs non-cancer image), image segmentation (cancer vs non-cancer tissue), and patch-level clusteirng (different classes). (Colo cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Weakly supervised learning
+      		
+          </td><td class="col4">
+      		
+      		   This paper used Multiple Instance Learning (MIL) to learn patch-level labels when only image-level labels are available. Adds an additional term of the loss that encourage nearby image patches within each bag to be in the same cluster. Assumes that multiple cancer subtypes with different morphological characteristics might co-exists in a WSI image. This model integrates the clustering concept into the MIL setting by assuming that exists a hidden variable that denotes the cluster of each positive instance. One classifier is trained for each cluster and each cluster's instances are weighted differently. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2014 - Wu - Improved robotic stereotactic body radiation therapy plan quality and planning efficacy for organ-confined prostate cancer utilizing overlap-volume histogram-driven planning methodology
+      		
+          </td><td class="col2">
+      		
+      		   Improve robotic stereotactic body radiation therapy plan quality and planning efﬁcacy for organ-conﬁned prostate cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   A database containing Clinical ly-delivered, robotic SBRT plans of patients with  prostate cancer was used as a cohort to establish an organ’s distance-to-dose model. The overlap-volume histogram (OVH)-driven planning methodology was reﬁned by adding the PTV volume factor to counter the target’s dose fall-off effect and incorporated into Multiplan to automate SBRT planning.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2014 - Tol - Evaluation of a Knowledge-Based Planning Solution for Head and Neck Cancer
+      		
+          </td><td class="col2">
+      		
+      		   Predict treatment plans for patients with head and neck cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   Knowledge-based plans were created by RapidPlan. RapidPlan results were compared with Clinical  plans (CP).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2014 - Kwon - Combining generative models for multifocal glioma segmentation and registration
+      		
+          </td><td class="col2">
+      		
+      		   Segmentation of gliobastoma tumor from MRI
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Scientific Knowledge - Mathematical Models
+Integration: Simulation
+      		
+          </td><td class="col4">
+      		
+      		   This is a generative model for tumor segmentation. This model grows tumors on an initialized atlas, and estimates parameters to grow the tumor via the diffusion-reaction-advection model, and registers the scans to this atlas to infer segmentation. Tumor shape prior is estimated via random walk with restart and incoporated into the model.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2014 - Kim - Knowledge boosting- a graph-based integration approach with multi-omics data and genomic knowledge for cancer Clinical  outcome prediction
+      		
+          </td><td class="col2">
+      		
+      		   Classification of ovarian cancer grade (low vs high)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Graph models
+      		
+          </td><td class="col4">
+      		
+      		   This work proposed a graph-based framework for integrating multi-omics data and genomic knowledge to improve power in predicting Clinical  outcomes and elucidate interplay between different levels.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2013 - Wu - Using overlap volume histogram and IMRT plan data to guide and automate VMAT planning  A head-and-neck case study
+      		
+          </td><td class="col2">
+      		
+      		   Predict treatment plans for patients with head and neck cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   Based on comparable head-and-neck dosimetric results between planner-generated VMAT and IMRT plans, an inhouse developed, overlap volume histogram (OVH)-driven automated planning application containing a database of prior Clinical  head-and-neck IMRT plans was built into Pinnacle 3 SmartArc for volumetricmodulated arc therapy (VMAT) planning.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2013 - Good - A Knowledge-Based Approach to Improving and Homogenizing Intensity Modulated Radiation Therapy Planning Quality Among Treatment Centers- An Example Application to Prostate Cancer Planning
+      		
+          </td><td class="col2">
+      		
+      		   Predict optimal radiation therapy dose distributions (3D) of prostate cancer patients by matching and deforming the cases in the (assembled) knowledge base.
+      		
+          </td><td class="col3">
+      		
+      		   Data: Pathologic imaging
+Representation: Auxiliary Datasets - private
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   A knowledge database was created from treatment plans for prostate cancer at their institute. For each “query” case from outside database, a similar “match” case was identiﬁed in the knowledge database, and the match case’s plan parameters were then adapted and optimized to the query case by using ﬁnal dose-volume planning constraints.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2012 - Yuan - Quantitative analysis of the factors which affect the interpatient organ‐at‐risk dose
+      		
+          </td><td class="col2">
+      		
+      		   Predict intensity modulated radiation therapy (IMRT) plans for patients with prostate or head-and-neck (HN) cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   This work formulized the dependence of organs-at-risk (OAR) dose volume histograms (DVHs) on patient anatomical factors into feature models which were learned from prior plans by a stepwise multiple regression method. Features were extracted by PCA.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2012 - Cun - Prognostic gene signatures for patient stratification in breast cancer- accuracy, stability and interpretability of gene selection app
+      		
+          </td><td class="col2">
+      		
+      		   Predict metastasis/relapse for patients with breast cancer and interpret which genes are most important for the prediction 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   Compared 14 published methods (8 using network knowledge) on 6 public breast cancer datasets. Found that the incorporation of prior knowledge could generally not significantly improve prediction accuracy but sometimes improve gene selection stability and biological interpretability. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2011 - Zhu - A planning quality evaluation tool for prostate adaptive IMRT based on machine learning
+      		
+          </td><td class="col2">
+      		
+      		   Generate dose volume histograms (DVH) of organs-at-risk based on prior plans
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   Principal component analysis was applied to DVHs and distance-to-target histogram (DTH) to quantify salient features. Then, support vector regression was implemented to establish the correlation between the features of the DVH and the anatomical information (organ volumes and DTH).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2011 - Wu - Data-driven approach to generating achievable dose-volume histogram objectives in intensity-modulated radiotherapy planning
+      		
+          </td><td class="col2">
+      		
+      		   Predict IMRT treatment plans for patients with head and neck cancer 
+      		
+          </td><td class="col3">
+      		
+      		   Data: treatment
+Representation: Knowledge from Experts - Quantitative
+Integration: Other
+      		
+          </td><td class="col4">
+      		
+      		   The overlap volume histogram (OVH) was used to compare the spatial relationships between the organs at risk and targets of a new patient with those of previous patients in a database.  Clinical  plans were compared with OVH-assisted plans (OPs).
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2011 - Chanyavanich - Knowledge‐based IMRT treatment planning for prostate cancer
+      		
+          </td><td class="col2">
+      		
+      		   Predict IMRT treatment planning for prostate cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Radiologic imaging
+Representation: Knowledge from Experts - Quantitative
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   In this study, the quality of each of treatment plan was evaluated by comparing the dose–volume histograms of the new semiautomated plan to that of the original plan developed manually by an expert (human) planner for the query case. The ﬁnal step consisted of optimizing the query case using the constraints and priorities from the reference case. A database was assembled into an information theoretic system. An algorithm based on mutual information was implemented to identify similar patient cases. Once the best match is identiﬁed, that Clinical ly approved plan is used to generate the new plan.
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2010 - Vaske - Inference of patient-specific pathway activities from multi-dimensional cancer genomics data using PARADIGM
+      		
+          </td><td class="col2">
+      		
+      		   Understand patient-specific genetic interactions and identify relevant pathways involved in cancer progression (GBM and breast cancer)
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature transformation
+      		
+          </td><td class="col4">
+      		
+      		   First converted the biologically known pathways into a directed graph and used it to construct factor graphs composed of observed entities and hidden entities. For each pathway, trained the factor graph for each patient using EM.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2010 - Johannes - Integration of pathway knowledge into a reweighted recursive feature elimination approach for risk stratification of cancer patie
+      		
+          </td><td class="col2">
+      		
+      		   Predict relapse for patients with breast cancer (risk stratification) and identify prognostic gene signatures 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   Assumes that a gene with a low fold-change should have more influence if connected to differentially expressed genes. This method uses GeneRank, adapted from Google’s PageRank, to rank features based on prior knowledge (PPI) and fold-change information from data. This ranking is then combined with the standard SVM-RFE to perform feature selection. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2009 - Zhu - Network-based support vector machine for classification of microarray samples
+      		
+          </td><td class="col2">
+      		
+      		   Predict metastasis (classification) for patients with breast cancer. 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Assumes that neighboring genes in a network tend to function together in biological processes. Thus, given a network of genes, treated two neighboring genes in a network as one group. Applied F_infinity norm to each group of two features encouraging 1) grouped feature selection, 2) genes in the same group to have similar coefficients, 3) genes with more direct neighbors to have larger coefficients .  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2009 - Guan - Lung cancer gene expression database analysis incorporating prior knowledge with support vector machine-based classification method
+      		
+          </td><td class="col2">
+      		
+      		   Classify disease subtype (cancer versus malignant pleural mesothelioma) for patients with lung cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   Used prior knowledge about lung disease related genes to select feature candidates, then tested the candidates through multiple testing and combined with feature genes selected by another method. The final set of features is used to run SVM. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2009 - Binder - Incorporating pathway information into boosting estimation of high-dimensional risk prediction models
+      		
+          </td><td class="col2">
+      		
+      		   Predict survival of lymphoma and ovarian cancer patients 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Knowledge-regularized objective
+      		
+          </td><td class="col4">
+      		
+      		   Assumes that connected genes in a network should have similar penalties. This PathBoost method uses pathway knowledge in the likelihood-based boosting procedure to perform gene selection. In detail, adapts the penalty for features that correspond to genes that have a connection to another gene by increasing the penalty for a selected feature and decreasing the penalty for connected feature. 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2007 - Chuang - Network-based classification of breast cancer metastasis
+      		
+          </td><td class="col2">
+      		
+      		   Discover prognostic biomarkers for breast cancer; predict metastatic vs non-metastatic tumor samples  
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature grouping
+      		
+          </td><td class="col4">
+      		
+      		   The gene expression profiles of tissue samples were mapped into the large network. Identified subnetworks as single connected components in the network and computed an activity score for each subnetwork by averaging the gene expression levels. Additionally, measured the discriminative score for each subnetwork as the mutual information of the activity score and the class label. Used greedy search to identify subnetworks whose discrimination power is locally maximal.  
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2005 - Guo - Towards precise classification of cancers based on robust gene functional expression profiles
+      		
+          </td><td class="col2">
+      		
+      		   Classify tumor type of multiple types of cancer
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Auxiliary Datasets - public
+Integration: Feature grouping
+      		
+          </td><td class="col4">
+      		
+      		   First, mapped genes to their categories in Gene Ontology, which are called functional modules. For each module, constructed a representative functional feature by summary measures (mean and median). These features are then used to train a classifier (random forest). 
+      		
+          </td></tr>
+
+      
+    
+      
+    
+        <tr class="row1">
+<td class="col1">
+      		
+      		   2002 - Lee - Gene selection: a Bayesian variable selection approach
+      		
+          </td><td class="col2">
+      		
+      		   Discover significant genes on breast tumors from patients carrying or not carrying mutations in the predisposing genes patients not expected 
+      		
+          </td><td class="col3">
+      		
+      		   Data: Molecular
+Representation: Scientific Knowledge - Knowledge Graph
+Integration: Feature selection
+      		
+          </td><td class="col4">
+      		
+      		   This paper proposed a hierarchical Bayesian model for gene selection. It tackles the limitation that genetic is high-dimensional and previous method tend to select a large number of genes. Rather than constraining the dimension or number of important genes, the authors assign a prior distribution over gene coefficients, which allows more flexibilty. The inclusino of each feature is represented via a latent indicator. Prior knowledge about genes that are important or pairs of genes that are related can be used to specify this latent indicator.
       		
           </td></tr>
 
@@ -520,11 +3525,60 @@
     
 </table>
 
+<!-- Include jQuery 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+-->
+<!-- Include DataTables CSS and JS 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
+-->
+<!-- Include DataTables Buttons CSS and JS 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.9/css/buttons.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/buttons.colVis.min.js"></script>
+-->
+<link href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/scroller/2.3.0/css/scroller.dataTables.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/select/1.7.0/css/select.dataTables.css" rel="stylesheet" />
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.js"></script>
+
+<script src="https://cdn.datatables.net/colreorder/1.7.0/js/dataTables.colReorder.js"></script>
+
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.js"></script>
+
+<script src="https://cdn.datatables.net/scroller/2.3.0/js/dataTables.scroller.js"></script>
+
+<script src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.js"></script>
+
 <script type="text/javascript" class="init">
-$(document).ready(function() {
-  // Create a new DataTable object
-  table = $('#kiml').DataTable();
-});
+new DataTable('#kiml', {
+    paging: true,
+    scrollCollapse: false,
+    scrollY: '800px',
+    scrollX: true,
+    ordering: true,
+    //buttons: ['colvis', 'copy', 'csv'],
+    //autoWidth: true,
+    //scroller: {
+    //  rowHeight: 20
+    //},
+    //scroller.rowHeight: 20,
+    //dom: 'B<"clear">lfrtip',
+    columnDefs: [{ "width": "50%", "targets": [3]}]
+  });
 </script>
 
 <p><br />

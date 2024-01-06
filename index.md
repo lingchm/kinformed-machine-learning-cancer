@@ -17,24 +17,26 @@ One strategy to tackle these challenges is to integrate biomedical knowledge int
 
 ### A Review of KIML for Cancer 
 
-Here, we focus on knowledge informed machine learning models applied in the cancer domain, where rich biomedical knowledge exists. We reviewed 127 studies focusing on machine learning and deep learning works published within the last 10 years (from 2012 onward). All works were categorized based on three dimensions:
+Here, we focus on knowledge informed machine learning models applied in the cancer domain, where rich biomedical knowledge exists. We reviewed 127 related papers since 2012, including both machine learning and deep learning studies.
 
-* What type of data is used for this application?
-* In what form is the knowledge represented?
-* How is the knowledge integrated into the machine learning pipeline? 
+All papers were categorized based on three dimensions:
+
+* *What type of data is used for this application?*
+* *In what form is the knowledge represented?*
+* *How is the knowledge integrated into the machine learning pipeline?*
 
 An overview of the surveyed papers by category is shown below:
 
-![align="center"](images/Figure2.png)
+<img src="images/Figure2.png" alt="figure2" width="1000" class="center" margin="auto"/>
 *Figure 1. Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers*
 
+### Live Summary Table
 
 Below are studies compiled from our review. This website is meant as (1) a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and (2) a snapshot of knowledge informed machine learning as an emerging field.
 
 **Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** We will update the table every month. 
 
 <br />
-
 <table id = "kiml" class="display">
   {% for row in site.data.mgl %}
       {% if forloop.first %}
@@ -71,26 +73,37 @@ Below are studies compiled from our review. This website is meant as (1) a resou
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/buttons.colVis.min.js"></script>
 -->
-<script type="text/javascript" class="init">
-import jQuery from "jquery";
-import DataTable from 'datatables.net-dt';
-import 'datatables.net-buttons-dt';
-import 'datatables.net-buttons/js/buttons.colVis.mjs';
-import 'datatables.net-colreorder-dt';
-import 'datatables.net-scroller-dt';
-import 'datatables.net-select-dt';
+<link href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/scroller/2.3.0/css/scroller.dataTables.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/select/1.7.0/css/select.dataTables.css" rel="stylesheet">
+ 
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.7.0/js/dataTables.colReorder.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.js"></script>
+<script src="https://cdn.datatables.net/scroller/2.3.0/js/dataTables.scroller.js"></script>
+<script src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.js"></script>
 
-$(document).ready(function() {
-  // Create a new DataTable object
-  table = $('#kiml').DataTable(
-    scrollX: true
-    //{scrollX: true,
-    //scrollY: 400,
-    //select: true,
-    //buttons: ['colvis', 'copy', 'csv']
-    //}
-  );
-});
+<script type="text/javascript" class="init">
+new DataTable('#kiml', {
+    paging: true,
+    scrollCollapse: false,
+    scrollY: '800px',
+    scrollX: true,
+    ordering: true,
+    //buttons: ['colvis', 'copy', 'csv'],
+    //autoWidth: true,
+    //scroller: {
+    //  rowHeight: 20
+    //},
+    //scroller.rowHeight: 20,
+    //dom: 'B<"clear">lfrtip',
+    columnDefs: [{ "width": "50%", "targets": [3]}]
+  });
 </script>
 
   

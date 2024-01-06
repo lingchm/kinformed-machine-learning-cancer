@@ -7,7 +7,7 @@ order: 2
 
 # Publication
 
-[Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/abs/2209.03299) \
+[Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/) \
 Lingchao Mao<sup>\*</sup>, Hairong Wang<sup>\*</sup>, Leland S Hu, Nhan L Tran, Peter D Canoll, Kristin R Swanson, Jing Li \
 *In Review 2023*
 
