@@ -35,7 +35,7 @@ icon: prof_pic.jpg  # the emoji used as the favicon (alternatively, provide imag
 
 navbar_fixed: true
 footer_fixed: true
-max_width: 800px
+max_width: 1200px
 
 enable_google_analytics:    false  # enables google analytics
 enable_cronitor_analytics: false  # enables cronitor RUM analytics

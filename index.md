@@ -61,25 +61,19 @@ Below are studies compiled from our review. This website is meant as (1) a resou
 
 
 <script type="text/javascript" class="init">
+import DataTable from 'datatables.net-dt';
+import 'datatables.net-responsive-dt';
 $(document).ready(function() {
   // Create a new DataTable object
   table = $('#kiml').DataTable(
     select: true,
     scrollY: 400,
     scrollX: true,
-    columns: [
-    { "width": "25%" },
-    { "width": "25%" },
-    { "width": "10%" },
-    { "width": "20%" },
-    { "width": "20%" },
-    { "width": "50%" },
-   ],
-   buttons: [
-        'colvis',
-        'copy',
-        'csv'
-    ]
+   //buttons: [
+   //     'colvis',
+   //     'copy',
+   //     'csv'
+   // ]
   );
 });
 </script>
