@@ -71,10 +71,12 @@ import 'datatables.net-select-dt';
 $(document).ready(function() {
   // Create a new DataTable object
   table = $('#kiml').DataTable(
-    {scrollX: true,
-    scrollY: 400,
-    select: true,
-    buttons: ['colvis', 'copy', 'csv']}
+    scrollX: true
+    //{scrollX: true,
+    //scrollY: 400,
+    //select: true,
+    //buttons: ['colvis', 'copy', 'csv']
+    //}
   );
 });
 </script>
