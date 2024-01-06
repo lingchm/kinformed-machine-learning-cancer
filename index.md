@@ -59,8 +59,20 @@ Below are studies compiled from our review. This website is meant as (1) a resou
     {% endfor %}
 </table>
 
-
+<!-- Include jQuery 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+-->
+<!-- Include DataTables CSS and JS 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
+-->
+<!-- Include DataTables Buttons CSS and JS 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.9/css/buttons.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.9/js/buttons.colVis.min.js"></script>
+-->
 <script type="text/javascript" class="init">
+import jQuery from "jquery";
 import DataTable from 'datatables.net-dt';
 import 'datatables.net-buttons-dt';
 import 'datatables.net-buttons/js/buttons.colVis.mjs';
