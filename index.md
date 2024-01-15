@@ -27,7 +27,7 @@ All papers were categorized based on three dimensions:
 
 An overview of the surveyed papers by category is shown below:
 
-<img src="images/Figure2.png" alt="figure2" width="800" class="center" margin="auto"/>
+<img src="images/Figure2.png" alt="figure2" width="1000" class="center" margin="auto"/>
 *Figure 1. Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers*
 
 ### Live Summary Table

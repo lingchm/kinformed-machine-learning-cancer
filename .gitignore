@@ -7,7 +7,4 @@ figures/*
 *.
 .env
 py_baml_example
-baml_src
-baml_client
-demo_infra
 env/*
