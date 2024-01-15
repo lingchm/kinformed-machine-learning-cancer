@@ -7,15 +7,21 @@ order: 2
 
 # Publication
 
-[Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/) \
+[Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: a Review](https://arxiv.org/abs/2401.06406/) \
 Lingchao Mao<sup>\*</sup>, Hairong Wang<sup>\*</sup>, Leland S Hu, Nhan L Tran, Peter D Canoll, Kristin R Swanson, Jing Li \
-*In Review 2023*
+*In Review 2024*
 
 <sup>\*</sup> Equal Contribution
 
 ```
-citation to be added 
-
+@misc{mao2024knowledgeinformed,
+      title={Knowledge-Informed Machine Learning for Cancer Diagnosis and Prognosis: A review}, 
+      author={Lingchao Mao and Hairong Wang and Leland S. Hu and Nhan L Tran and Peter D Canoll and Kristin R Swanson and Jing Li},
+      year={2024},
+      eprint={2401.06406},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 
 
@@ -34,5 +40,4 @@ This work was led by Dr. Jing Li's lab from Georgia Tech in collaboration with r
 
 # Website Author
 
-This website was made using [jekyll](https://jekyllrb.com)
-hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). Contact Lingchao Mao (lmao31@gatech.edu) if you have any suggestions or questions about this website.
+This website was made using [jekyll](https://jekyllrb.com) hosted on [github pages](https://pages.github.com). The code can be found [here](https://github.com/lingchm/kinformed-machine-learning-cancer). Contact Lingchao Mao (lmao31@gatech.edu) if you have any suggestions or questions about this website.
