@@ -34,7 +34,7 @@ An overview of the surveyed papers by category is shown below:
 
 Below are studies compiled from our [review](https://arxiv.org/abs/2401.06406). This website is meant as a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and an overview of knowledge informed machine learning as an emerging field.
 
-**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** *Last updated in January, 2024.*
+**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** *Last updated in April, 2024.*
 
 <br />
 <table id = "kiml" class="display">
