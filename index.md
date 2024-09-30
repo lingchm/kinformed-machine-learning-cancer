@@ -19,9 +19,9 @@ One strategy to tackle these challenges is to integrate biomedical knowledge int
 
 Here, we focus on [knowledge informed machine learning models applied in the cancer domain](https://arxiv.org/abs/2401.06406), where rich biomedical knowledge exists. We reviewed **173** related papers focusing on the past decade, including both machine learning and deep learning studies.
 
-
+<p align="center">
 <img src="images/Figure1.png" alt="figure1" width="600" class="center" margin="auto"/>
-
+</p>
 
 *Figure 2. Annual trends of knowledge-informed machine learning articles addressing cancer diagnosis and prognosis*
 
@@ -34,17 +34,17 @@ Papers were categorized based on three dimensions:
 
 An overview of the taxonomy is shown in Figure 2:
 
+<p align="center">
 <img src="images/Figure2.png" alt="figure2" width="1050" class="center" margin="auto"/>
-
+</p>
 
 *Figure 1. Taxonomy of knowledge-informed machine learning in cancer diagnosis and prognosis. Our literature review categorizes existing along three dimensions: type of data, form of knowledge representation, and strategy for knowledge integration. Note that one paper may be included in more than one category. The thickness of the paths indicates the relative frequency of papers in each area (thin: one to four papers; medium: five to nine papers; thick: equal or more than ten papers)*
 
 ### Live Summary Table
 
-Below are studies compiled from our [review](https://arxiv.org/abs/2401.06406). This website is meant as a resource for those looking to use knowledge informed machine learning for their application (healthcare or non-health related) but unsure how each component is realized in practice, and an overview of knowledge informed machine learning as an emerging field.
+Our [review paper](https://arxiv.org/abs/2401.06406) includes a comprehensive overview of papers from 2012 to 2023 April. This website includes a live review of most recent paper up to *September 2024* and is meant as a growing resource for those looking to use KIML for their healthcare or non-health related applications.
 
-**Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** 
-*Last updated in September, 2024*
+**How to contribute: Use this [link](https://forms.gle/5kpcCzYFpy5vYhGp8) to submit a paper to be added to this table.** 
 
 <br />
 <table id = "kiml" class="display">
