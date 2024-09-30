@@ -13,11 +13,11 @@ order: 1
 
 Cancer remains one of the most challenging diseases to treat in the medical field, with its incidence escalating alongside the increasing global life expectancy. Machine learning has enabled in-depth analysis of rich multi-omics profiles and medical imaging for cancer diagnosis and prognosis. Still, cancer applications present several modeling challenges for machine learning models, including the limited labeled sample sizes, the intricate interplay of high-dimensionality data types, the heterogeneity observed among patients and within tumors, and concerns about model interpretability. 
 
-One strategy to tackle these challenges is to integrate biomedical knowledge into machine learning models, referred to as **knowledge informed machine learning (KIML)**. By regularizing the learning process using domain knowledge, the accuracy, robustness, and interpretability of models can be improved. Over the past decase, knowledge-informed machine learning has garnered increasing interest and demonstrated success across scientific, engineering, and health applications, particularly as a solution for settings with limited training data. 
+One strategy to tackle these challenges is to integrate biomedical knowledge into machine learning models, referred to as **Knowledge Informed Machine Learning (KIML)**. By regularizing the learning process using domain knowledge, the accuracy, robustness, and interpretability of models can be improved. Over the past decase, knowledge-informed machine learning has garnered increasing interest and demonstrated success across scientific, engineering, and health applications, particularly as a solution for settings with limited training data. 
 
 ### A Review of KIML for Cancer 
 
-Here, we focus on [knowledge informed machine learning models applied in the cancer domain](https://arxiv.org/abs/2401.06406), where rich biomedical knowledge exists. We reviewed **173** related papers focusing on the past decade, including both machine learning and deep learning studies.
+Here, we focus on [KIML models applied in the cancer domain](https://arxiv.org/abs/2401.06406), where rich biomedical knowledge exists. We compiled **173** related papers from the literature since 2012, including both machine learning and deep learning studies.
 
 <p align="center">
 <img src="images/Figure1.png" alt="figure1" width="600" class="center" margin="auto"/>
@@ -27,12 +27,12 @@ Here, we focus on [knowledge informed machine learning models applied in the can
 
 
 Papers were categorized based on three dimensions:
+> 
+> * *What type of data is used for this application?*
+> * *In what form is the knowledge represented?*
+> * *How is the knowledge integrated into the machine learning pipeline?*
 
-* *What type of data is used for this application?*
-* *In what form is the knowledge represented?*
-* *How is the knowledge integrated into the machine learning pipeline?*
-
-An overview of the taxonomy is shown in Figure 2:
+We developed a comprehensive taxonomy to categorize the papers based on these three dimensions. An overview of the taxonomy is shown in Figure 2:
 
 <p align="center">
 <img src="images/Figure2.png" alt="figure2" width="1050" class="center" margin="auto"/>
